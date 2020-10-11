@@ -1,0 +1,329 @@
+body{
+	background: #F5F5F5;
+	font-family: 'Open Sans', sans-serif;
+	color: #000000;
+	margin: 0;
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	color: #000000;
+	line-height: 1.7rem;
+	max-width: 80%;
+}
+
+h2{
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	color: #AE3034;
+}
+
+a{
+	text-decoration: none;
+	transition: 0.5s;
+	color: #954749;
+}
+
+/* Navigation Styling */
+.main-nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background: #ffffff;
+	padding: 0.4rem 5rem;
+}
+
+/* Logo in Navigation */
+.nav-logo img{
+	width: 10rem;
+}
+
+.nav-logo{
+	flex: 1;
+}
+
+/* Navigation Links */
+.nav-link-section{
+	flex: 3;
+	text-align: right;
+	padding-top: 1.1rem;
+}
+
+.nav-link{
+	color: #AE3034;
+	padding-bottom: 0.2rem;
+	margin-right: 2rem;
+}
+
+.nav-link:hover, .nav-link:focus{
+	color: #3C3C3C;
+	border-bottom: 1px solid #3C3C3C;
+}
+
+/* Container for Contents: Checkout Form and Cart Display */
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 2.5rem 4rem;
+}
+
+.container div{
+	padding: 2rem;
+}
+
+/* Container for Checkout Form */
+.checkout-container{
+	flex: 3;
+	order: 1;
+	margin-right: 8rem;
+}
+
+/* Container for Cart Display*/
+.cart-container{
+	flex: 1;
+	order: 2;
+}
+
+.checkout{
+	background: #ffffff;
+}
+
+.checkout h2{
+	margin-top: 0.2rem;
+	margin-left: 1rem;
+}
+
+/* Payment form styling */
+.payment-form{
+	background: #ffffff;
+	padding-bottom: 2.5rem;
+}
+
+.form-section{
+	margin-bottom: -2rem;
+	margin-left: -1rem;
+	margin-right: 2rem;
+	display: inline-block;
+}
+
+.form-section p{
+	margin-top: -0.8rem;
+}
+
+/* Styling Radio Buttons*/
+.radio-btn {
+  	display: inline;
+  	position: relative;
+  	padding-left: 1.5rem;
+  	margin-right: 3rem;
+  	cursor: pointer;
+}
+
+/*Styling Radio Buttons: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
+/* Hide the browser's default radio button */
+.radio-btn input {
+  	position: absolute;
+  	opacity: 0;
+  	cursor: pointer;
+}
+
+/* Custom radio button */
+.radio-select {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	margin-top: 0.2rem;
+  	height: 0.8rem;
+ 	width: 0.8rem;
+  	background-color: #ffffff;
+  	border: 1px solid #3C3C3C;
+  	border-radius: 50%;
+}
+
+.radio-btn:hover input ~ .radio-select {
+  	border: 1px solid #3C3C3C;
+	background: #ECDEDE;
+}
+
+/* When the radio button is selected */
+.radio-btn input:checked ~ .radio-select {
+  border: 1px solid #AE3034;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-select:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-btn input:checked ~ .radio-select:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) of the radio button*/
+.radio-btn .radio-select:after {
+ 	top: 0;
+	left: 0;
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 50%;
+	background: #954749;
+}
+
+/* Changing Form Label Colour*/
+.form-label{
+	color: #3C3C3C;
+}
+
+/* Styling Text Input Box */
+.text-input{
+	padding: 0.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.7rem;
+	border: 1px solid #3C3C3C;
+	border-radius: 0.4rem;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.5s;
+}
+
+.text-input:hover{
+	background: #ECDEDE;
+}
+
+.text-input:focus{
+	border: 1px solid #AE3034;
+	background: #F5F5F5;
+}
+
+/* Change Size of Text Input Field */
+input[type = "text"], input[type="email"]{
+    width: 20rem;
+}
+
+/* Change order of container display when screen size is small */
+@media screen and (max-width: 71rem){
+	.checkout-container{
+		order: 2;
+		margin-right: 0rem;
+	}
+
+	.cart-container{
+		order: 1;
+	}
+}
+
+/* Decrease Text Input Box to create columns in the form */
+@media screen and (min-width: 83rem){
+	/* change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 12rem;
+    }
+}
+
+
+/* on screens that are 91em or more, increase text input box size */
+@media screen and (min-width: 91rem){
+	/*change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 16rem;
+	}
+}
+
+/* on screens that are 100em or more, increase text input box size */
+@media screen and (min-width: 100rem){
+	/*change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 20rem;
+	}
+}
+
+/*on screens that are 108em or more, increase text input box size*/
+@media screen and (min-width: 108rem){
+	/* change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 23rem;
+	}
+}
+
+/* Checkout Button Styling*/
+.confirm-checkout{
+	margin-left: -1rem;
+}
+
+.checkout-btn{
+	padding: 0.8rem 3rem;
+	margin-right: 0.5rem;
+	border-radius: 10px;
+	border: 2px solid #954749;
+	background: #954749;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.3s;
+}
+
+.checkout-btn:hover{
+	border: 2px solid #954749;
+	background: #ffffff;
+	color: #954749;
+}
+
+.checkout-btn:focus{
+	border: 2px solid #3C3C3C;
+	background: #F5F5F5;
+	color: #3C3C3C;
+}
+
+/* Cart Display Styling*/
+.cart{
+	background: white;
+}
+
+.cart h2{
+	margin-top: 0.2rem;
+	margin-left: 0.6rem;
+}
+
+.grid {
+    display: grid;
+}
+
+/* Grid Gutters for Checkout Cart Display */ 
+.grid.gutters{ 
+    grid-column-gap: 3rem;
+    grid-row-gap: 1.5rem; 
+}
+
+/* Two Column Grid For Checkout Cart Display */
+.grid.two-column{ 
+    grid-template-columns: 3fr 1fr; 
+    grid-template-rows: auto;
+    grid-auto-flow: row;  
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Top Section of Cart Display for Items */
+.cart-top{
+    border-bottom: 1px solid #3C3C3C;
+    margin-top: -2rem;
+}
+
+/* Bottom Section of Cart Display for Total Price */
+.cart-bottom{
+	margin-top: -1rem;
+    margin-bottom: -2em;
+}
+
+.cart-top h4{
+	margin-top: 1.1rem;
+	margin-left: -1rem;
+}
+
+.cart-bottom h4{
+	margin-top: 1.1rem;
+	margin-left: -1rem;
+	color: #954749;
+}

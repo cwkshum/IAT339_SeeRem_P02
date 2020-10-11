@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>SeeRem | Checkout</title>
+    	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
+    	<link href="css/checkout.css" rel="stylesheet">
+  	</head>
+
+  	<body>
+
+  		<!-- Navigation -->
+	    <nav class="main-nav">  
+	    	<div class="nav-logo">
+  				<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
+	        </div>
+	        <div class="nav-link-section">
+		        <a href="index.html" class="nav-link">Home</a>
+		        <a href="services.html" class="nav-link">Services</a>
+		       	<a href="index.html" class="nav-link">About</a>
+		       	<a href="index.html" class="nav-link">Contact</a>
+	       </div>
+	    </nav>
+
+	    <div class="container">
+	    	<!-- Checkout Section -->
+	    	<div class="checkout-container">
+	    		<div class ="checkout">
+		    		<h2>Checkout</h2>
+		    		<!-- Payment Form -->
+		        	<form class="payment-form">
+		        		<!-- Personal Information -->
+		        		<div class="form-section">
+			  				<label class="form-label" for="firstname">First Name</label><br>
+			  				<input class="text-input" type="text" id="firstname" name="firstname" placeholder="First">
+			  			</div>
+			  			<div class="form-section">
+				  			<label class="form-label" for="lastname">Last Name</label><br>
+				  			<input class="text-input" type="text" id="lastname" name="lastname" placeholder="Last">
+			  			</div>
+			  			<div class="form-section">
+			  				<label class="form-label" for="email">Email Address</label><br>
+		  					<input class="text-input" type="email" id="email" name="email" placeholder="email@gmail.com">
+	  					</div>
+	  					<div class="form-section">
+		  					<label class="form-label" for="phone">Phone Number</label><br>
+		  					<input class="text-input" type="text" id="phone" name="phone" placeholder="012-345-6789">
+		  				</div>
+		  				<!-- Company Information -->
+		  				<div class="form-section">
+		  					<label class="form-label" for="company">Company Name</label><br>
+		  					<input class="text-input" type="text" id="company" name="company" placeholder="Company">
+	  					</div>
+	  					<div class="form-section">
+		  					<label class="form-label" for="industry">Company Industry</label><br>
+		  					<input class="text-input" type="text" id="industry" name="industry" placeholder="Industry">
+	  					</div>
+		  				<div class="form-section">
+	  						<label class="form-label" for="country">Country</label><br>
+	  						<input class="text-input" type="text" id="country" name="country" placeholder="Country">
+	  					</div>
+	  					<!-- Card Information -->
+	  					<div class="form-section">
+	  						<label class="form-label" for="cardnumber">Card Number</label><br>
+	  						<input class="text-input" type="text" id="cardnumber" name="cardnumber" placeholder="0123 4567 8901 2345">
+	  					</div>
+	  					<div class="form-section">
+	  						<label class="form-label" for="expdate">Exp Date (MM/YY)</label><br>
+	  						<input class="text-input" type="text" id="expdate" name="expdate" placeholder="01/22"><br>
+	  					</div>
+	  					<div class="form-section">
+	  						<label class="form-label" for="securitycode">Security Code</label><br>
+	  						<input class="text-input" type="text" id="securitycode" name="securitycode" placeholder="012">
+	  					</div>
+	  					<!-- Company Size -->
+	  					<div class="form-section">
+	  						<p class="form-label">Company Size</p>
+			  				<label class="radio-btn form-label">Less than 500 people
+	 							<input type="radio" name="radio">
+	  							<span class="radio-select"></span>
+							</label>
+							<label class="radio-btn form-label">Over 500 people
+		 						<input type="radio" name="radio">
+		  						<span class="radio-select"></span>
+							</label>
+			  			</div>
+			  			<!-- Checkout Button -->
+		  				<div class="confirm-checkout">
+		  					<input class="checkout-btn" type="submit" value="Confirm Checkout">
+		  				</div>
+					</form>
+	  			</div>
+	    	</div>
+	    	<!-- Your Cart Section -->
+	    	<div class="cart-container">
+	        	<div class="cart">
+	        		<h2>Your Cart</h2>
+	        		<!-- Top Section Containing Items -->
+		        	<div class="grid gutters two-column cart-top">
+		        		<h4>SeeRem Free Trial</h4>
+		        		<p>$00.00</p>
+		        		<h4>SeeRem One Year Subscription Plan</h4>
+		        		<p>$30.00</p>
+		        	</div>
+		        	<!-- Bottom Section Containing Total Price -->
+		        	<div class="grid gutters two-column cart-bottom">
+		        		<h4>Total:</h4>
+		        		<p>$30.00</p>
+	        		</div>
+	        	</div>
+	    	</div>
+		</div>
+  	</body>
+</html>
