@@ -1,0 +1,55 @@
+/* CONTACT PAGE STYLING */
+
+.contactpage-seeda {
+	background: #fff;
+	margin: 2rem;
+	padding: 2rem;
+}
+
+.content1, .content2, .content3, .content4 {
+  flex: 1;
+  min-width: 25%;
+	padding: 2rem;
+	margin: 2rem;
+	background-color: #fff;
+}
+
+.content4 {
+  min-width: 50%;
+}
+
+input#message {
+	width: 100%;
+	/* height: 80%; */
+}
+
+.message-form{
+	background: #ffffff;
+	padding: 2rem 0rem;
+	margin-right: 10rem;
+	margin-bottom: 2rem;
+}
+
+div.grid {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+div.grid-content {
+	width: 50%;
+	display: inline;
+}
+
+div.grid-content p {
+	margin: 0;
+}
+
+div.grid-content img {
+	width: 80%;
+	/* padding-right: 10%; */
+}
+
+img.icon {
+	/* width: 3%; */
+}

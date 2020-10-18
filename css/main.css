@@ -2,6 +2,8 @@ body{
 	background: #F5F5F5;
 	font-family: 'Open Sans', sans-serif;
 	color: #000000;
+	/* ADDED FROM SERVICES.CSS*/
+	margin: 0;
 }
 
 p{
@@ -372,16 +374,16 @@ li{
     display: grid;
 }
 
-/* Grid Gutters for Checkout Cart Display */ 
-.grid.gutters{ 
+/* Grid Gutters for Checkout Cart Display */
+.grid.gutters{
     grid-column-gap: 3rem;
 }
 
 /* Two Column Grid For Checkout Cart Display */
-.grid.two-column{ 
-    grid-template-columns: 3fr 1fr; 
+.grid.two-column{
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
-    grid-auto-flow: row;  
+    grid-auto-flow: row;
     margin-left: 0;
     margin-right: 0;
 }
@@ -408,14 +410,14 @@ li{
 }
 
 /* Image Gallery Styling */
-.grid.row-gap{ 
-    grid-row-gap: 1.5rem; 
+.grid.row-gap{
+    grid-row-gap: 1.5rem;
 }
 
-.grid.image-gallery{ 
-    grid-template-columns: 1fr 1fr; 
+.grid.image-gallery{
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-auto-flow: row;  
+    grid-auto-flow: row;
     margin-left: 0;
     margin-right: 0;
     margin-left: -2rem;
@@ -423,4 +425,276 @@ li{
 
 .grid.image-gallery img{
 	width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ADDED FROM SERVICES.CSS */
+
+/* Navigation Styling */
+.main-nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background: #ffffff;
+	padding: 0.4rem 5rem;
+}
+
+/* Logo in Navigation */
+.nav-logo img{
+	width: 10rem;
+}
+
+.nav-logo{
+	flex: 1;
+}
+
+/* Navigation Links */
+.nav-link-section{
+	flex: 3;
+	text-align: right;
+	padding-top: 1.1rem;
+}
+
+.nav-link{
+	color: #AE3034;
+	padding-bottom: 0.2rem;
+	margin-right: 2rem;
+}
+
+.nav-link:hover, .nav-link:focus{
+	color: #3C3C3C;
+	border-bottom: 1px solid #3C3C3C;
+}
+
+header{
+	background: #AE3034;
+	margin-top: 0;
+	padding: 6rem;
+	text-align: center;
+}
+
+header h1{
+	color: #ffffff;
+	display: inline-block;
+	padding-bottom: 0.5rem;
+	border-bottom: 0.2rem solid #fff;
+}
+
+/* Container for Service Listings (does not affect footer container)*/
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+	padding: 2.5rem;
+}
+
+.listing1, .listing2, .listing3{
+	flex: 1;
+}
+
+/* Service Listing Styling */
+.service-listing{
+	background: #ffffff;
+	padding: 2rem;
+}
+
+/* Service Listing Image Size */
+.service-listing img{
+	width: 100%;
+}
+
+/* Learn More Button Styling*/
+.more-btn{
+	padding: 1rem 1rem;
+	margin-right: 0.5rem;
+	border-radius: 10px;
+	border: 2px solid #954749;
+	background: #954749;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.3s;
+}
+
+.more-btn:hover{
+	border: 2px solid #954749;
+	background: #ffffff;
+	color: #954749;
+}
+
+.more-btn:focus{
+	border: 2px solid #3C3C3C;
+	background: #F5F5F5;
+	color: #3C3C3C;
+}
+
+
+
+
+
+
+/* ADDED CSS FOR INDEX.HTML */
+
+.updates h2 {
+	display: block;
+	background: #ddd;
+	text-align: center;
+	margin-top: 0;
+	padding: 2rem;
+}
+
+
+
+
+
+
+/* content1 = about SeeRem
+	 content2 = service Listings
+	 content3 = contact
+	 content4 = about Seeda
+ */
+
+.content1, .content2, .content3, .content4 {
+	min-width: 25%;
+	padding: 2rem;
+	margin: 2rem;
+	background-color: #fff;
+}
+
+/* adjusting Contact + About Seeda divs into a row */
+.content3, .content4 {
+	display: inline-block;
+	flex: 1;
+	width: 42%;
+}
+
+.content3 p,.content4 p{
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Media Queries for Contact and About Seeda divs*/
+@media screen and (max-width: 71rem){
+	.content3, .content4 {
+		width: auto;
+		min-width: 25%;
+		padding: 2rem;
+		margin: 2rem
+	}
+}
+@media screen and (min-width: 71rem){
+	.content3, .content4 {
+		width: 38.25%;
+	}
+}
+
+@media screen and (min-width: 83rem){
+	.content3, .content4 {
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 91rem){
+	.content3, .content4 {
+		width: 41%;
+	}
+}
+
+@media screen and (min-width: 100rem){
+	.content3, .content4 {
+		width: 41.85%;
+	}
+}
+
+
+
+
+
+/* FOOTER */
+footer.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+	padding: 0.5rem;
+}
+
+div.grid {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+div.grid-content {
+	width: 50%;
+	display: inline;
+}
+
+div.grid-content p {
+	margin: 0;
+}
+
+div.grid-content img {
+	width: 80%;
+}
+
+footer {
+	background: #AE3034;
+	margin-top: 0;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.8rem;
+}
+
+footer div {
+	width: 33%;
+	display: inline;
+	padding: 1rem 6rem;
+	flex: 1;
+}
+
+footer a, footer p {
+	display: block;
+	max-width: 100%;
+	color: #ffffff;
+	text-align: center;
+	line-height: 1rem;
+	padding: 0.2rem;
+	margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+footer p {
+	color: #e0e0eb;
+}
+
+footer a {
+	font-weight: 500;
+}
+
+footer a:hover {
+	color: #000000;
+}
+
+/* div.footer-socials {
+	display: inline;
+} */
+
+div.footer-socials a {
+	display: inline;
+}
+
+img.sm-icon {
+	max-width:22%;
 }
