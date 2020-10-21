@@ -1,0 +1,175 @@
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+	padding: 2.5rem;
+}
+
+.listing1, .listing2, .listing3{
+	flex: 1;
+}
+
+/* Service Listing Styling */
+.service-listing{
+	background: #ffffff;
+	padding: 2rem;
+}
+
+/* Service Listing Image Size */
+.service-listing img{
+	width: 100%;
+}
+
+/* Learn More Button Styling*/
+.more-btn{
+	padding: 1rem 1rem;
+	margin-right: 0.5rem;
+	border-radius: 10px;
+	border: 2px solid #954749;
+	background: #954749;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.3s;
+}
+
+.more-btn:hover{
+	border: 2px solid #954749;
+	background: #ffffff;
+	color: #954749;
+}
+
+.more-btn:focus{
+	border: 2px solid #3C3C3C;
+	background: #F5F5F5;
+	color: #3C3C3C;
+}
+
+.updates h2 {
+	display: block;
+	background: #ddd;
+	text-align: center;
+	margin-top: 0;
+	padding: 2rem;
+}
+
+.content {
+	min-width: 25%;
+	padding: 2rem;
+	margin: 2rem;
+	background-color: #fff;
+}
+
+div.grid {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+div.grid-content {
+	width: 50%;
+	display: inline;
+}
+
+div.grid-content p {
+	margin: 0;
+}
+
+div.grid-content img {
+	width: 80%;
+}
+
+
+div.seedaLogo img {
+	max-width: 250px;
+}
+
+div.seedaLogo {
+	width: 30%
+}
+
+div.seedaText {
+	width: 70%;
+}
+
+div.seedaText p {
+	max-width: 100%;
+}
+
+
+/* 320PX TO 480PX */
+@media screen and (min-width:20rem) and (max-width:30rem){
+  .updates h2 {
+  	padding: 0.8rem;
+  	font-size: 0.85rem;
+  }
+
+  div.content {
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  div.grid {
+    display: block;
+  }
+
+  div.grid-content img, div.grid-content p {
+    padding: 0 2rem;
+    width: 80%;
+  }
+
+  div.grid-content img {
+    width: 80%;
+  }
+
+  h3 {
+    padding-left: 2rem;
+    font-size: 1.5rem;
+  }
+
+  p {
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* 480PX TO 960PX */
+@media screen and (min-width:30rem) and (max-width:60rem){
+  div.grid {
+    display: block;
+  }
+
+  div.content {
+    padding: 2rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+  p {
+    padding: 0.8rem 0;
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  div#about-seeda .grid {
+    /* display: flex; */
+  }
+  div.seedaLogo img {
+  	max-width: 250px;
+    padding: 0;
+  }
+
+  div.seedaLogo, div.seedaText {
+  	width: 100%
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .container h3 {
+    padding: 0;
+  }
+}

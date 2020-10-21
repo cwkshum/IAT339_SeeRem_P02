@@ -5,11 +5,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SeeRem | Home</title>
+	<link rel="icon" href="img/sq_logo.png" type="image/png">
 	<!-- Google Fonts: https://www.w3schools.com/css/css_font_google.asp -->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
-	<!-- <link href="css/services.css" rel="stylesheet"> -->
+	<link href="css/index.css" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="javascript/logic.js"></script>
+	<link href="css/java_styling.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -21,7 +27,8 @@
 		<div class="nav-link-section">
 			<a href="index.html" class="nav-link">Home</a>
 			<a href="index.html#services" class="nav-link">Services</a>
-			<a href="index.html#about-seerem" class="nav-link">About</a>
+			<a onmouseover="dropDown()" href="index.html#about-seerem" class="nav-link">About</a>
+			<a id="about-nav">Test Menu</a>
 			<a href="index.html" class="nav-link">Contact</a>
 		</div>
 	</nav>
@@ -35,17 +42,18 @@
 	</div>
 
 
-	<div id="about-seerem" class="content1">
+	<div id="about-seerem" class="content">
 		<h3>About Seerem</h3>
 
 		<div class="grid">
 			<div class="grid-content"><img src="img/construction2.jpg" alt="About Seerem"></div>
-			<div class="grid-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus. Eros donec ac odio tempor orci dapibus. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Mi quis hendrerit dolor magna eget.</p></div>
+			<div class="grid-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus. Eros donec ac odio tempor orci dapibus. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Mi quis hendrerit dolor magna eget.</p>
+			<br><p>To get in contact with our team, or to leave feedback, please click <a href="contact.html">here</a>.<p></div>
 		</div>
 	</div>
 
 
-	<div id="services" class="content2">
+	<div id="services" class="content">
 		<h3>Services</h3>
 
 		<!-- Code from services.html, corresponding styling is now in main.css -->
@@ -71,56 +79,51 @@
 				<div class="service-listing">
 					<img src="img/download.jpg" alt=">Download Trial">
 					<h3>Download Trial</h3>
-					<button class="more-btn" type="button">Learn More</button>
+					<button onclick="showMore()" class="more-btn" type="button">Learn More</button>
+
+					<div class="new">
+						<p>New Text</p>
+						<button onclick="hideMore()" class="close-new">Show Less</button>
+					</div>
 				</div>
 			</div>
 
 		</div> <!-- end container div -->
 	</div> <!-- end service listings -->
 
-	<div id="contact" class="content3">
-		<h3>Contact</h3>
 
-		<div class="grid">
-			<div class="grid-content"><img src="img/contact.png" alt="Contact"></div>
-			<div class="grid-content"><p>To get in contact with our team, or to leave feedback, please click <a href="contact.html">here</a>.<p></div>
-			</div>
-	</div>
-
-
-	<div id="about-seeda" class="content4">
+	<div id="about-seeda" class="content">
 		<h3>About Seeda</h3>
 
 		<div class="grid">
-			<div class="grid-content"><img src="img/seeda_logo.png" alt="Seeda Logo"></div>
-			<div class="grid-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus. Eros donec ac odio tempor orci dapibus. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Mi quis hendrerit dolor magna eget.</p></div>
+			<div class="grid-content seedaLogo"><img src="img/seeda_logo.png" alt="Seeda Logo"></div>
+			<div class="grid-content seedaText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus. Eros donec ac odio tempor orci dapibus. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Mi quis hendrerit dolor magna eget.</p></div>
 		</div>
 	</div>
 
 
-	<footer class="container">
-		<div class="footer-nav">
-			<a href="index.html">Home</a>
-			<a href="index.html#about-seerem">About Seerem</a>
-			<a href="index.html#about-seeda">About Seeda</a>
-			<a href="index.html#services">Services</a>
-			<a href="contact.html">Contact</a>
+	<footer>
+		<div class="footer-services">
+			<h4>Navigation</h4>
+			<ul>
+				<li><a href="index.html#about-seerem">About</a></li>
+				<li><a href="index.html#services">Services</a></li>
+				<li><a href="subscriptions.html">Subscription Options</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
 		</div>
-
 		<div class="footer-contact">
-			<p>+1 (403) 966 9848</p>
-			<p>support@seerem.com</p>
-			<p>Suite 2000
-				<br>125 9 Avenue SE
-				<br>Calgary, AB
-				<br>T2G 0PG</p>
-				<p>Hours:</p>
+			<h4>Contact</h4>
+			<ul>
+				<li>Location: Suite 2000, 125 9 Avenue SE, Calgary, AB, T2G 0P6</li>
+				<li>Phone: +1 (403) 966 9848</li>
+			</ul>
 		</div>
-
-		<div class="footer-socials">
-			<a href="https://twitter.com/SeedaInc"><img class="sm-icon" src="img/twt.png" alt="Twitter Logo"></a>
-			<a href="https://www.facebook.com/seeda.ca/?ref=aymt_homepage_panel"><img class="sm-icon" src="img/fb.png" alt="Facebook Logo"></a>
-			<a href="https://www.linkedin.com/company/seeda.ca/"><img class="sm-icon" src="img/linkedin.png" alt="LinkedIn Logo"></a>
+		<div class="footer-social">
+			<h4>Social Media</h4>
+			<a href="https://twitter.com/SeedaInc" target="_blank"><img src="img/twitter.png" alt="Twitter Logo"></a>
+			<a href="https://www.facebook.com/seeda.ca/?ref=aymt_homepage_panel" target="_blank"><img src="img/facebook.png" alt="Facebook Logo"></a>
+			<a href="https://www.linkedin.com/company/seeda.ca" target="_blank"><img src="img/linkedin.png" alt="LinkedIn Logo"></a>
 		</div>
 	</footer>
 

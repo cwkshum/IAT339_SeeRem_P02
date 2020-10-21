@@ -128,6 +128,13 @@ a:hover, .intext-link:hover, .intext-link:focus{
 	border-bottom: 1px solid #3C3C3C;
 }
 
+
+
+
+
+
+
+
 /* Submit and More button Styling*/
 .submit-btn, .more-btn{
 	padding: 0.7rem 1rem;
@@ -296,6 +303,13 @@ li{
 	margin-bottom: 1rem;
 }
 
+
+
+
+
+
+
+
 /* Service Listing Container*/
 .service-container{
 	display: flex;
@@ -316,6 +330,11 @@ li{
 .service-listing img{
 	width: 100%;
 }
+
+
+
+
+
 
 /* Payment form styling */
 .payment-form{
@@ -361,6 +380,11 @@ li{
 	background: #F5F5F5;
 	color: #3C3C3C;
 }
+
+
+
+
+
 
 /* Cart Display Styling*/
 .cart{
@@ -409,6 +433,12 @@ li{
 	color: #954749;
 }
 
+
+
+
+
+
+
 /* Image Gallery Styling */
 .grid.row-gap{
     grid-row-gap: 1.5rem;
@@ -426,19 +456,6 @@ li{
 .grid.image-gallery img{
 	width: 90%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* ADDED FROM SERVICES.CSS */
 
 /* Navigation Styling */
 .main-nav{
@@ -490,7 +507,6 @@ header h1{
 	border-bottom: 0.2rem solid #fff;
 }
 
-/* Container for Service Listings (does not affect footer container)*/
 .container{
 	display: flex;
 	flex-direction: row;
@@ -499,202 +515,161 @@ header h1{
 	padding: 2.5rem;
 }
 
-.listing1, .listing2, .listing3{
-	flex: 1;
-}
-
-/* Service Listing Styling */
-.service-listing{
-	background: #ffffff;
-	padding: 2rem;
-}
-
-/* Service Listing Image Size */
-.service-listing img{
-	width: 100%;
-}
-
-/* Learn More Button Styling*/
-.more-btn{
-	padding: 1rem 1rem;
-	margin-right: 0.5rem;
-	border-radius: 10px;
-	border: 2px solid #954749;
-	background: #954749;
-	color: #ffffff;
-	font-family: 'Open Sans', sans-serif;
-	transition: 0.3s;
-}
-
-.more-btn:hover{
-	border: 2px solid #954749;
-	background: #ffffff;
-	color: #954749;
-}
-
-.more-btn:focus{
-	border: 2px solid #3C3C3C;
-	background: #F5F5F5;
-	color: #3C3C3C;
-}
-
-
-
-
-
-
-/* ADDED CSS FOR INDEX.HTML */
-
-.updates h2 {
-	display: block;
-	background: #ddd;
-	text-align: center;
-	margin-top: 0;
-	padding: 2rem;
-}
-
-
-
-
-
-
-/* content1 = about SeeRem
-	 content2 = service Listings
-	 content3 = contact
-	 content4 = about Seeda
- */
-
-.content1, .content2, .content3, .content4 {
-	min-width: 25%;
-	padding: 2rem;
-	margin: 2rem;
-	background-color: #fff;
-}
-
-/* adjusting Contact + About Seeda divs into a row */
-.content3, .content4 {
-	display: inline-block;
-	flex: 1;
-	width: 42%;
-}
-
-.content3 p,.content4 p{
-	margin: 0;
-	padding: 0;
-}
-
-
-/* Media Queries for Contact and About Seeda divs*/
-@media screen and (max-width: 71rem){
-	.content3, .content4 {
-		width: auto;
-		min-width: 25%;
-		padding: 2rem;
-		margin: 2rem
-	}
-}
-@media screen and (min-width: 71rem){
-	.content3, .content4 {
-		width: 38.25%;
-	}
-}
-
-@media screen and (min-width: 83rem){
-	.content3, .content4 {
-		width: 40%;
-	}
-}
-
-@media screen and (min-width: 91rem){
-	.content3, .content4 {
-		width: 41%;
-	}
-}
-
-@media screen and (min-width: 100rem){
-	.content3, .content4 {
-		width: 41.85%;
-	}
-}
-
-
-
-
-
-/* FOOTER */
-footer.container {
+footer{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-top: 1rem;
-	padding: 0.5rem;
-}
-
-div.grid {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-}
-
-div.grid-content {
-	width: 50%;
-	display: inline;
-}
-
-div.grid-content p {
-	margin: 0;
-}
-
-div.grid-content img {
-	width: 80%;
-}
-
-footer {
-	background: #AE3034;
-	margin-top: 0;
-	text-align: center;
-	color: #ffffff;
+	background: #3C3C3C;
+	color: #F5F5F5;
 	font-size: 0.8rem;
+	padding: 1rem 5rem;
 }
 
-footer div {
-	width: 33%;
-	display: inline;
-	padding: 1rem 6rem;
+footer div{
+	padding: 0rem 2rem;
+}
+
+footer h4{
+	color: #ffffff;
+	font-size: 0.9rem;
+}
+
+footer ul{
+	list-style-type: none;
+	margin-left: -2.5rem;
+}
+
+footer li{
+	margin-top: 0.5rem;
+}
+
+.footer-services{
 	flex: 1;
 }
 
-footer a, footer p {
-	display: block;
-	max-width: 100%;
-	color: #ffffff;
-	text-align: center;
-	line-height: 1rem;
-	padding: 0.2rem;
-	margin-block-start: 0;
-  margin-block-end: 0;
+.footer-services a{
+	color: #F5F5F5;
 }
 
-footer p {
-	color: #e0e0eb;
+.footer-services a:hover{
+	color: #AE3034;
 }
 
-footer a {
-	font-weight: 500;
+.footer-contact{
+	flex: 2;
 }
 
-footer a:hover {
-	color: #000000;
-}
-
-/* div.footer-socials {
+.footer-social{
 	display: inline;
-} */
-
-div.footer-socials a {
-	display: inline;
+	flex: 1;
 }
 
-img.sm-icon {
-	max-width:22%;
+.footer-social img{
+	width: 12%;
+	margin-right: 0.5rem;
+}
+
+
+/* 320PX TO 480PX */
+@media screen and (min-width:20rem) and (max-width:30rem){
+	body {
+		margin: 0;
+		padding: 0;
+		font-size: 0.75rem;
+	}
+
+	.main-nav{
+		padding: 0.4rem 2.5rem;
+	}
+
+	.nav-logo img{
+		width: 6rem;
+	}
+
+	.nav-link-section{
+		padding-top: 0.3rem;
+	}
+
+	.nav-link{
+		text-align: right;
+		margin-right: 0.1rem
+		padding: 0;
+		font-size: 0.8rem;
+	}
+
+	header {
+		padding: 1rem;
+	}
+
+	footer{
+		font-size: 0.82rem;
+		padding: 0.5rem;
+	}
+
+	footer div{
+		padding: 0rem 2rem;
+	}
+
+	footer h4{
+		color: #ffffff;
+		font-size: 0.9rem;
+	}
+
+	footer li{
+		margin: 0.1rem;
+		padding: 0.2rem;
+	}
+	.footer-social img{
+		width: 27%;
+		margin-right: 0.5rem;
+		padding: 0.1rem;
+	}
+}
+
+@media screen and (min-width: 33.6rem){
+footer {
+	padding: 1rem;
+}
+
+	footer div{
+		padding: 0rem 0.6rem;
+	}
+
+	.footer-social img{
+		width: 25%;
+	}
+}
+
+/* 480PX TO  960px */
+@media screen and (min-width:30rem) and (max-width:60rem){
+
+	header {
+		padding: 1.5rem;
+	}
+
+	.updates h2 {
+		font-size: 1.2rem;
+	}
+
+	footer {
+		padding: 1rem;
+	}
+	footer div{
+		padding: 0rem 0.6rem;
+	}
+
+	footer h4{
+		color: #ffffff;
+		font-size: 0.7rem;
+	}
+
+	footer li{
+		margin: 0.1rem;
+		padding: 0.1rem;
+	}
+	.footer-social img{
+		width: 30%;
+		margin-right: 0.5rem;
+		padding: 0.1rem;
+	}
 }
