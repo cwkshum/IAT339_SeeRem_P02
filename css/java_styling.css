@@ -1,0 +1,24 @@
+/* Testing JavaScript functions */
+
+#scrollUpbtn {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	padding: 0.7rem 1rem;
+	margin-right: 0.5rem;
+	border-radius: 10px;
+	border: 2px solid #954749;
+	background: #954749;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.3s;
+}
+
+#about-nav {
+	display: none;
+	position: fixed;
+}
+
+.new {
+	display: none;
+}
