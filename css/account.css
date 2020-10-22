@@ -1,0 +1,295 @@
+body{
+	background: #F5F5F5;
+	font-family: 'Open Sans', sans-serif;
+	color: #000000;
+	margin: 0;
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	color: #000000;
+	line-height: 1.7rem;
+	max-width: 80%;
+}
+
+h1{
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 700;
+	color: #AE3034;
+	max-width: 60%;
+}
+
+h2{
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	color: #AE3034;
+}
+
+a{
+	text-decoration: none;
+	transition: 0.5s;
+	color: #954749;
+}
+
+/* Navigation Styling */
+.main-nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background: #ffffff;
+	padding: 0.4rem 5rem;
+}
+
+/* Logo in Navigation */
+.nav-logo img{
+	width: 10rem;
+}
+
+.nav-logo{
+	flex: 1;
+}
+
+/* Navigation Links */
+.nav-link-section{
+	flex: 3;
+	text-align: right;
+	padding-top: 1.1rem;
+}
+
+.nav-link{
+	color: #AE3034;
+	padding-bottom: 0.2rem;
+	margin-right: 2rem;
+}
+
+.nav-link:hover, .nav-link:focus{
+	color: #3C3C3C;
+	border-bottom: 1px solid #3C3C3C;
+}
+
+/* Header Styling */
+header{
+	background: #AE3034;
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+	padding: 6rem;
+}
+
+header h1{
+	color: #ffffff;
+	display: inline-block;
+	padding-bottom: 0.5rem;
+}
+
+/* Container for Account Page */
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 2.5rem;
+}
+
+/* Page Description Styling */
+.page-description{
+	flex: 2;
+	order: 1;
+	padding-right: 2rem;
+	padding-left: 3.3rem;
+}
+
+/* Image Styling */
+.image-container{
+	flex: 1;
+	order: 2;
+	margin-top: 1.5rem;
+	margin-right: 4.5rem;
+}
+
+.image-container img{
+	width: 100%;
+}
+
+/* Account Form Container */
+.account-form-container{
+	flex: 1;
+	padding: 2rem;
+	margin-left: 2rem;
+	margin-right: 4.5rem;
+	margin-bottom: 3rem;
+	background: #ffffff;
+}
+
+.account-form-container h2{
+	margin-left: 0.8rem;
+}
+
+/* Create Account form styling */
+.account-form{
+	background: #ffffff;
+	margin-top: -1.5rem;
+	padding-left: 2rem;
+	padding-bottom: 1.2rem;
+}
+
+.form-section{
+	padding-top: 2rem;
+	margin-bottom: -2rem;
+	margin-left: -1rem;
+	margin-right: 5rem;
+	display: inline-block;
+}
+
+/* Changing Form Label Colour*/
+.form-label{
+	color: #3C3C3C;
+}
+
+/* Styling Text Input Box */
+.text-input{
+	padding: 0.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.7rem;
+	border: 1px solid #3C3C3C;
+	border-radius: 0.4rem;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.5s;
+}
+
+.text-input:hover{
+	background: #ECDEDE;
+}
+
+.text-input:focus{
+	border: 1px solid #AE3034;
+	background: #F5F5F5;
+}
+
+/* Change Size of Text Input Field */
+input[type = "text"], input[type="email"]{
+    width: 20rem;
+}
+
+/* Decrease Text Input Box to create columns in the form */
+@media screen and (min-width: 56rem){
+	/* change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 14rem;
+    }
+}
+
+@media screen and (min-width: 68rem){
+	/* change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 20rem;
+    }
+    .form-section{
+		margin-right: 10%;
+	}
+}
+
+/* on screens that are 78em or more, increase text input box size */
+@media screen and (min-width: 78rem){
+	/*change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 24rem;
+	}
+}
+
+/* on screens that are 90em or more, increase text input box size */
+@media screen and (min-width: 90rem){
+	/*change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 28rem;
+	}
+}
+
+/*on screens that are 108em or more, increase text input box size*/
+@media screen and (min-width: 108rem){
+	/* change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 35rem;
+	}
+}
+
+/* Submit Button Styling */
+.create-account{
+	margin-left: -1rem;
+	margin-top: 3rem;
+}
+
+.action-btn{
+	padding: 0.8rem 3rem;
+	margin-right: 0.5rem;
+	border-radius: 10px;
+	border: 2px solid #954749;
+	background: #954749;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.3s;
+}
+
+.action-btn:hover{
+	border: 2px solid #954749;
+	background: #ffffff;
+	color: #954749;
+}
+
+.action-btn:focus{
+	border: 2px solid #3C3C3C;
+	background: #F5F5F5;
+	color: #3C3C3C;
+}
+
+/* Footer Styling */
+footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background: #3C3C3C;
+	color: #F5F5F5;
+	font-size: 0.8rem;
+	padding: 1rem 5rem;
+}
+
+footer div{
+	padding: 0rem 2rem;
+}
+
+footer h4{
+	color: #ffffff;
+	font-size: 0.9rem;
+}
+
+footer ul{
+	list-style-type: none;
+	margin-left: -2.5rem;
+}
+
+footer li{
+	margin-top: 0.5rem;
+}
+
+.footer-services{
+	flex: 1;
+}
+
+.footer-services a{
+	color: #F5F5F5;
+}
+
+.footer-services a:hover{
+	color: #AE3034;
+}
+
+.footer-contact{
+	flex: 2;
+}
+
+.footer-social{
+	flex: 1;
+}
+
+.footer-social img{
+	width: 12%;
+	margin-right: 0.5rem;
+}
