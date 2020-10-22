@@ -1,131 +1,150 @@
 <!DOCTYPE html>
 <html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SeeRem | Home</title>
+		<link rel="icon" href="img/sq_logo.png" type="image/png">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SeeRem | Home</title>
-	<link rel="icon" href="img/sq_logo.png" type="image/png">
-	<!-- Google Fonts: https://www.w3schools.com/css/css_font_google.asp -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/index.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  	<script src="javascript/logic.js"></script>
+		<link href="css/java_styling.css" rel="stylesheet">
+	</head>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="javascript/logic.js"></script>
-	<link href="css/java_styling.css" rel="stylesheet">
+	<body>
+		<!-- Navigation -->
+		<nav class="main-nav">
+			<div class="nav-logo">
+				<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
+			</div>
+			<div class="nav-link-section">
+				<a href="index.html" class="nav-link">Home</a>
+				<a href="#services" class="nav-link">Services</a>
+				<!-- <a onmouseover="dropDown()" href="index.html#about-seerem" class="nav-link">About</a>
+				<a id="about-nav">Test Menu</a> -->
+				<a href="#about-seerem" class="nav-link">About</a>
+				<a href="index.html" class="nav-link">Contact</a>
+			</div>
+		</nav>
 
-</head>
+		<!-- Header -->
+		<header class="main-header">
+			<h1>SeeRem</h1>
+		</header>
 
-<body>
-
-	<nav class="main-nav">
-		<div class="nav-logo">
-			<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
+		<!-- Updates Banner -->
+		<div class="updates">
+			<h2>New: Monthly Subscription Plan Now Available!</h2>
 		</div>
-		<div class="nav-link-section">
-			<a href="index.html" class="nav-link">Home</a>
-			<a href="index.html#services" class="nav-link">Services</a>
-			<a onmouseover="dropDown()" href="index.html#about-seerem" class="nav-link">About</a>
-			<a id="about-nav">Test Menu</a>
-			<a href="index.html" class="nav-link">Contact</a>
-		</div>
-	</nav>
-
-	<header>
-		<h1>SeeRem</h1>
-	</header>
-
-	<div class="updates">
-		<h2>New: Monthly subscription now available!</h2>
-	</div>
 
 
-	<div id="about-seerem" class="content">
-		<h3>About Seerem</h3>
+		<div id="about-seerem" class="content">
+			<h2>About Seerem</h2>
 
-		<div class="grid">
-			<div class="grid-content"><img src="img/construction2.jpg" alt="About Seerem"></div>
-			<div class="grid-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus. Eros donec ac odio tempor orci dapibus. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Mi quis hendrerit dolor magna eget.</p>
-			<br><p>To get in contact with our team, or to leave feedback, please click <a href="contact.html">here</a>.<p></div>
-		</div>
-	</div>
-
-
-	<div id="services" class="content">
-		<h3>Services</h3>
-
-		<!-- Code from services.html, corresponding styling is now in main.css -->
-		<div class="container">
-
-			<div class="listing1">
-				<div class="service-listing">
-					<img src="img/register.jpg" alt="Account Registration">
-					<h3>Account Registration</h3>
-					<button class="more-btn" type="button">Learn More</button>
+			<div class="grid">
+				<div class="grid-content about-seerem-container">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus. Eros donec ac odio tempor orci dapibus. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Mi quis hendrerit dolor magna eget. Nulla rhoncus faucibus facilisis. Aenean molestie id sapien non facilisis. Etiam nec consectetur mauris, non ullamcorper sem. Maecenas pellentesque, enim non laoreet pellentesque, id dignissim metus enim at neque.</p>
+					<br><p>Get in contact with our team or leave feedback <a href="contact.html">here</a>.<p>
+				</div>
+				<div class="grid-content image-container">
+					<img src="img/aboutseerem.jpg" alt="About Seerem">
 				</div>
 			</div>
+		</div>
 
-			<div class="listing2">
-				<div class="service-listing">
-					<img src="img/construction.jpg" alt="Purchase Subscription">
-					<h3>Purchase Subscription</h3>
-					<button class="more-btn" type="button">Learn More</button>
+
+		<div id="services" class="content">
+			<h2>Services</h2>
+
+			<!-- Code from services.html, corresponding styling is now in main.css -->
+			<div class="service-listing-container">
+
+				<div class="listing1">
+					<div class="service-listing">
+						<img src="img/register.jpg" alt="Account Registration">
+						<h3>Account Registration</h3>
+						<div class="learn-more">
+							<a class="more-btn" href="registration.html">Learn More</a>
+						</div>
+					</div>
 				</div>
-			</div>
 
-			<div class="listing3">
-				<div class="service-listing">
-					<img src="img/download.jpg" alt=">Download Trial">
-					<h3>Download Trial</h3>
-					<button onclick="showMore()" class="more-btn" type="button">Learn More</button>
+				<div class="listing2">
+					<div class="service-listing">
+						<img src="img/construction.jpg" alt="Purchase Subscription">
+						<h3>Purchase Subscription</h3>
+						<div class="learn-more">
+							<a class="more-btn" href="subscription.html">Learn More</a>
+						</div>
+					</div>
+				</div>
 
-					<div class="new">
-						<p>New Text</p>
-						<button onclick="hideMore()" class="close-new">Show Less</button>
+				<div class="listing3">
+					<div class="service-listing">
+						<img src="img/download.jpg" alt=">Download Trial">
+						<h3>Download Trial</h3>
+						<div class="learn-more">
+							<a class="more-btn" href="subscription.html">Learn More</a>
+						</div>
+						<!-- <button onclick="showMore()" class="more-btn" type="button">Learn More</button> -->
+
+						<!-- <div class="new">
+							<p>New Text</p>
+							<button onclick="hideMore()" class="close-new">Show Less</button>
+						</div> -->
 					</div>
 				</div>
 			</div>
-
-		</div> <!-- end container div -->
-	</div> <!-- end service listings -->
+		</div> 
 
 
-	<div id="about-seeda" class="content">
-		<h3>About Seeda</h3>
+		<div id="about-seeda" class="content">
+			
 
-		<div class="grid">
-			<div class="grid-content seedaLogo"><img src="img/seeda_logo.png" alt="Seeda Logo"></div>
-			<div class="grid-content seedaText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus. Eros donec ac odio tempor orci dapibus. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Mi quis hendrerit dolor magna eget.</p></div>
+			<div class="grid">
+				<div class="grid-content seedaLogo">
+					<img src="img/seeda_logo.png" alt="Seeda Logo">
+				</div>
+				<div class="grid-content seedaText">
+					<h2>Seeda</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus. Eros donec ac odio tempor orci dapibus. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Mi quis hendrerit dolor magna eget. Nulla rhoncus faucibus facilisis. Aenean molestie id sapien non facilisis. Etiam nec consectetur mauris, non ullamcorper sem. Maecenas pellentesque, enim non laoreet pellentesque, id dignissim metus enim at neque. Visit our site <a href="https://www.seeda.ca/home" target="_blank">here</a>.</p>
+				</div>
+			</div>
 		</div>
-	</div>
 
 
-	<footer>
-		<div class="footer-services">
-			<h4>Navigation</h4>
-			<ul>
-				<li><a href="index.html#about-seerem">About</a></li>
-				<li><a href="index.html#services">Services</a></li>
-				<li><a href="subscriptions.html">Subscription Options</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-		<div class="footer-contact">
-			<h4>Contact</h4>
-			<ul>
-				<li>Location: Suite 2000, 125 9 Avenue SE, Calgary, AB, T2G 0P6</li>
-				<li>Phone: +1 (403) 966 9848</li>
-			</ul>
-		</div>
-		<div class="footer-social">
-			<h4>Social Media</h4>
-			<a href="https://twitter.com/SeedaInc" target="_blank"><img src="img/twitter.png" alt="Twitter Logo"></a>
-			<a href="https://www.facebook.com/seeda.ca/?ref=aymt_homepage_panel" target="_blank"><img src="img/facebook.png" alt="Facebook Logo"></a>
-			<a href="https://www.linkedin.com/company/seeda.ca" target="_blank"><img src="img/linkedin.png" alt="LinkedIn Logo"></a>
-		</div>
-	</footer>
-
-</body>
+		<!-- Footer -->
+		<footer>
+			<div class="footer-services">
+				<!-- Site Navigation Section -->
+				<h4>Navigation</h4>
+				<ul>
+					<li><a href="index.html#about-seerem">About</a></li>
+					<li><a href="index.html#services">Services</a></li>
+					<li><a href="subscription.html">Subscription Plans</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="footer-contact">
+				<!-- Contact Information Section -->
+				<h4>Contact</h4>
+				<ul>
+					<li>Location: Suite 2000, 125 9 Avenue SE, Calgary, AB, T2G 0P6</li>  
+					<li>Email Address: support@seerem.com</li> 
+					<li>Phone: +1 (403) 966 9848</li>
+				</ul>
+			</div>
+			<div class="footer-social">
+				<!-- Social Media Section -->
+				<h4>Social Media</h4>
+				<a href="https://twitter.com/SeedaInc" target="_blank"><img src="img/twitter.png" alt="Twitter Logo"></a>
+				<a href="https://www.facebook.com/seeda.ca/?ref=aymt_homepage_panel" target="_blank"><img src="img/facebook.png" alt="Facebook Logo"></a>
+				<a href="https://www.linkedin.com/company/seeda.ca" target="_blank"><img src="img/linkedin.png" alt="LinkedIn Logo"></a>
+			</div>
+		</footer>
+	</body>
 </html>
