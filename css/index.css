@@ -26,7 +26,7 @@
   width: 100%;
 }
 
-/* Learn More Button Styling*/
+/* Learn More Button Styling */
 .learn-more{
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
@@ -56,6 +56,7 @@
   color: #3C3C3C;
 }
 
+/* Update Banner Text */
 .updates h2 {
   display: block;
   background: #ddd;
@@ -102,26 +103,30 @@
   flex: 1;
 }
 
-.seedaLogo {
-  /*width: 30%*/
+/*.seedaLogo {
+  width: 30%
   flex: 1;
   padding-right: 4rem;
   margin-top: 1.5rem;
 }
 
 .seedaLogo img {
-  /*max-width: 250px;*/
-  width: 100%;
-}
+  max-width: 250px;
+}*/
 
 .seedaText {
   /*width: 70%;*/
-  flex: 3;
+  flex: 2;
   padding-left: 4rem;
 }
 
 .seedaText p {
   max-width: 90%;
+}
+
+.seedaText img{
+  max-width: 10rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -182,11 +187,11 @@
     max-width: 100%;
   }
 
-  .seedaLogo img {
+  /*.seedaLogo img {*/
     /*max-width: 250px;*/
-    max-width: 35%;
+ /*   max-width: 35%;
     padding: 0;
-  }
+  }*/
 
   .seedaLogo, div.seedaText {
     width: 100%
