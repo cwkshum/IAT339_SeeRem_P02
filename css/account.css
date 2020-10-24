@@ -40,6 +40,15 @@
 	margin-left: 0.8rem;
 }
 
+.confirmation-container h2, .confirmation-container p {
+	margin-left:0.8rem;
+	max-width: 100%;
+}
+
+.confirmation-container {
+	display: none;
+}
+
 /* Create Account form styling */
 .account-form{
 	background: #ffffff;
@@ -81,6 +90,17 @@
 	background: #F5F5F5;
 }
 
+.confirmation-container{
+	flex: 1;
+	padding: 2rem;
+	margin-left: 2rem;
+	margin-right: 4.5rem;
+	margin-bottom: 3rem;
+	background: #ffffff;
+}
+
+
+
 /* Change Size of Text Input Field */
 input[type = "text"], input[type="email"]{
     width: 20rem;
@@ -103,7 +123,7 @@ input[type = "text"], input[type="email"]{
     	width: 12rem;
     }
 
-    .container{
+  .container{
 		display: block;
 	}
 

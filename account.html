@@ -13,18 +13,22 @@
     	<!-- Linked Google Fonts -->
     	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
-    	
+
     	<!-- Linked Style Sheets -->
     	<link href="css/main.css" rel="stylesheet">
     	<link href="css/account.css" rel="stylesheet">
+
+			<!-- JavaScript -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		  <script src="js/logic.js"></script>
   	</head>
 
   	<body>
   		<!-- Navigation -->
   		<nav class="main-nav">
-  			<div class="nav-logo">  
-  				<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a> 
-  			</div>   
+  			<div class="nav-logo">
+  				<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
+  			</div>
   			<div class="nav-link-section">
 		        <a href="index.html" class="nav-link">Home</a>
 		        <a href="index.html#services" class="nav-link">Services</a>
@@ -76,12 +80,19 @@
 			  		</div>
 				  	<!-- Create Account Button -->
 			  		<div class="create-account">
-			  			<input class="action-btn" type="submit" value="Create Account">
+			  			<input onclick="showConfirmation()" class="action-btn" type="submit" value="Create Account">
 			  		</div>
-				</form>			
+				</form>
 			</div>
 		</div>
-		
+
+		<div class="container">
+			<div class="confirmation-container">
+				<h2>Account Confirmation</h2>
+				<p>You've successfully created your SeeRem account. The journey to better remote communication starts now! You will receive an email confirming your account details shortly. If you do not receive an email within 1 hour, please contact our team <a href="contact.html">here</a>.</p>
+			</div>
+		</div>
+
 		<!-- Footer -->
 		<footer>
 			<div class="footer-services">
@@ -98,8 +109,8 @@
 				<!-- Contact Information Section -->
 				<h4>Contact</h4>
 				<ul>
-					<li>Location: Suite 2000, 125 9 Avenue SE, Calgary, AB, T2G 0P6</li>  
-					<li>Email Address: support@seerem.com</li> 
+					<li>Location: Suite 2000, 125 9 Avenue SE, Calgary, AB, T2G 0P6</li>
+					<li>Email Address: support@seerem.com</li>
 					<li>Phone: +1 (403) 966 9848</li>
 				</ul>
 			</div>
