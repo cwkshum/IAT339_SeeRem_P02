@@ -103,6 +103,10 @@
   flex: 1;
 }
 
+.grid-content.image-container img{
+  margin-top: 2rem;
+}
+
 /*.seedaLogo {
   width: 30%
   flex: 1;
@@ -156,14 +160,22 @@
     width: 80%;
   }
 
-  h3 {
+  /*h3 {
     padding-left: 2rem;
     font-size: 1.5rem;
-  }
+  }*/
 
   p {
     padding: 1rem 0;
     font-size: 0.9rem;
+  }
+
+  .main-header{
+    padding: 3rem 2rem;
+  }
+
+  .main-header h1{
+    font-size: 2rem;
   }
 }
 
@@ -203,5 +215,12 @@
 
   .container h3 {
     padding: 0;
+  }
+
+  .main-header{
+    padding: 4rem 2rem;
+  }
+  .main-header h1{
+    font-size: 2rem;
   }
 }

@@ -191,6 +191,30 @@ input[type = "text"], input[type="email"]{
     width: 20rem;
 }
 
+/* Decrease Text Input Box and set containers to display block */
+@media screen and (max-width: 50rem){
+	/* change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 12rem;
+    }
+
+    .container{
+		display: block;
+	}
+
+	.image-container{
+		margin: 0 auto;
+		max-width: 80%;
+	}	
+
+	.contact-sales-container{
+		padding: 2rem;
+		margin-left: 2rem;
+		margin-bottom: 3rem;
+		background: #ffffff;
+	}
+}
+
 /* Decrease Text Input Box to create columns in the form */
 @media screen and (min-width: 56rem){
 	/* change size of text input field */

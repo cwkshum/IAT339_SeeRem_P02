@@ -194,10 +194,9 @@ footer li{
 	}
 
 	.nav-link{
-		text-align: right;
-		margin-right: 0.1rem;
+		margin-right: 0.1rem
 		padding: 0;
-		font-size: 0.8rem;
+		font-size: 0.6rem;
 	}
 
 	header {
@@ -228,6 +227,11 @@ footer li{
 @media screen and (min-width:30rem) and (max-width:60rem){
 	header {
 		padding: 1.5rem;
+	}
+
+	.nav-link{
+		margin-right: 0.1rem
+		font-size: 0.6rem;
 	}
 
 	.updates h2 {
