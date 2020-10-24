@@ -16,6 +16,10 @@ function hideMore(){
   $('.new').css("display", "none")
 }
 
+function select(){
+  // if Trial selected, automatically select corresponding radio button
+}
+
 // setup = function() {
 //
 // }

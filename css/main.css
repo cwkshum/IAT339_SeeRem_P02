@@ -221,6 +221,10 @@ footer li{
 		margin-right: 0.5rem;
 		padding: 0.1rem;
 	}
+
+	.container{
+		padding: 1rem;
+	}
 }
 
 /* 480PX TO  960px */

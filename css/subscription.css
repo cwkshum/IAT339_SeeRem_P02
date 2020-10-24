@@ -1,10 +1,10 @@
 /* Container for Subscription Listings */
-.container{
+/* .container{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	padding: 2.5rem;
-}
+} */
 
 /* Page Description Styling */
 .page-description{
@@ -191,6 +191,22 @@ input[type = "text"], input[type="email"]{
     width: 20rem;
 }
 
+
+@media screen and (min-width:20rem) and (max-width:30rem){
+	.container, {
+		padding: 0;
+	}
+	.contact-sales-container {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	.subscription-container {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
+
 /* Decrease Text Input Box and set containers to display block */
 @media screen and (max-width: 50rem){
 	/* change size of text input field */
@@ -205,13 +221,19 @@ input[type = "text"], input[type="email"]{
 	.image-container{
 		margin: 0 auto;
 		max-width: 80%;
-	}	
+	}
 
 	.contact-sales-container{
 		padding: 2rem;
 		margin-left: 2rem;
 		margin-bottom: 3rem;
 		background: #ffffff;
+	}
+}
+
+@media screen and (min-width:20rem) and (max-width:30rem){
+	.subscription-container{
+		padding: 0.5rem;
 	}
 }
 
