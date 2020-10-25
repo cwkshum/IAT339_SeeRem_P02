@@ -1,18 +1,4 @@
 /* Container for Account Page */
-/* .container{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	padding: 2.5rem;
-} */
-
-/* Page Description Styling */
-.page-description{
-	flex: 2;
-	order: 1;
-	padding-right: 2rem;
-	padding-left: 3.3rem;
-}
 
 /* Image Styling */
 .image-container{
@@ -55,39 +41,6 @@
 	margin-top: -1.5rem;
 	padding-left: 2rem;
 	padding-bottom: 1.2rem;
-}
-
-.form-section{
-	padding-top: 2rem;
-	margin-bottom: -2rem;
-	margin-left: -1rem;
-	margin-right: 5rem;
-	display: inline-block;
-}
-
-/* Changing Form Label Colour*/
-.form-label{
-	color: #3C3C3C;
-}
-
-/* Styling Text Input Box */
-.text-input{
-	padding: 0.5rem;
-	margin-top: 0.5rem;
-	margin-bottom: 0.7rem;
-	border: 1px solid #3C3C3C;
-	border-radius: 0.4rem;
-	font-family: 'Open Sans', sans-serif;
-	transition: 0.5s;
-}
-
-.text-input:hover{
-	background: #ECDEDE;
-}
-
-.text-input:focus{
-	border: 1px solid #AE3034;
-	background: #F5F5F5;
 }
 
 .confirmation-container{

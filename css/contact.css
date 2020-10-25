@@ -1,17 +1,7 @@
-/* Container for Contact Page */
-.container{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	padding: 2.5rem;
-}
 
 /* Page Description */
 .page-description{
-	flex: 2;
-	order: 1;
-	padding-right: 2rem;
-	padding-left: 3.3rem;
+	/* extended from main.css */
 	margin-bottom: 1rem;
 }
 
@@ -33,52 +23,6 @@
 
 .contact-form-container h2{
 	margin-left: 0.8rem;
-}
-
-/* Contact Form styling */
-.contact-form{
-	background: #ffffff;
-	margin-top: -1.5rem;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	padding-bottom: 1.2rem;
-}
-
-.form-section{
-	padding-top: 2rem;
-	margin-bottom: -2rem;
-	margin-left: -1rem;
-	display: inline-block;
-}
-
-/* Changing Form Label Colour */
-.form-label{
-	color: #3C3C3C;
-}
-
-/* Styling Text Input Box */
-.text-input{
-	padding: 0.5rem;
-	margin-top: 0.5rem;
-	margin-bottom: 0.7rem;
-	border: 1px solid #3C3C3C;
-	border-radius: 0.4rem;
-	font-family: 'Open Sans', sans-serif;
-	transition: 0.5s;
-}
-
-.text-input:hover, textarea:hover{
-	background: #ECDEDE;
-}
-
-.text-input:focus, textarea:focus{
-	border: 1px solid #AE3034;
-	background: #F5F5F5;
-}
-
-/* Change Size of Text Input Field */
-input[type = "text"], input[type="email"]{
-    width: 20rem;
 }
 
 /* Change Size of Text Area */
