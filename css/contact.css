@@ -7,8 +7,12 @@
 
 /* icon image styling */
 .page-description img{
-	width: 5%;
+	max-width: 5%;
 	margin-right: 0.8rem;
+}
+
+.page-description h3{
+	margin-top: 2rem;
 }
 
 /* Contact Form Container*/

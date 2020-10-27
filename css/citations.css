@@ -1,0 +1,12 @@
+.container{
+	display: block;
+}
+
+.citations ul{
+	list-style-type: none;
+	/*max-width: 90%;*/
+}
+
+.citations li{
+	margin-top: 1.2rem;
+}
