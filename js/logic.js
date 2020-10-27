@@ -17,6 +17,14 @@ function hideConfirmation(){
   $('.confirmation-container').css("display", "none");
 }
 
+function showNav(){
+  $('.nav-link-section').css("display", "inline");
+}
+
+function hideNav(){
+  $('.nav-link-section').css("display", "none");
+}
+
 function select(){
   // if Trial selected, automatically select corresponding radio button
 }

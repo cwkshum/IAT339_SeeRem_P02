@@ -82,7 +82,7 @@ img {
 max-width: 90%;
 }
 
-#seedaLogo {
+.seedaLogo {
   max-width: 250px;
 }
 
@@ -106,10 +106,12 @@ max-width: 90%;
     font-size: 2rem;
   }
 
-  .seedaText {
-    /*width: 70%;*/
-    flex: 2;
-    padding-left: 1rem;
+  .image-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  img {
+    width: 100%;
   }
 }
 
@@ -125,10 +127,6 @@ max-width: 90%;
     max-width: 100%;
   }
 
-  .seedaLogo, div.seedaText {
-    width: 100%;
-  }
-
   .container h3 {
     padding: 0;
   }
@@ -138,5 +136,67 @@ max-width: 90%;
   }
   .main-header h1{
     font-size: 2rem;
+  }
+
+  .about-seerem-container {
+    flex: 1;
+  }
+
+  #about-seerem .image-container{
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin: 0.5rem;
+  }
+
+  /* Styling for About Seeda content */
+
+  #about-seeda div{
+    flex: 1;
+  }
+  #about-seeda .image-container {
+   width: 100%;
+  }
+
+  .about-seeda-container {
+    width: 100%;
+  }
+}
+
+/*  480 TO 765 for About Seeda*/
+@media screen and (min-width: 20rem) and (max-width:47.8rem){
+
+
+  #about-seeda {
+    display: block;
+  }
+  #about-seeda .image-container img {
+    max-width: 100%;
+  }
+  .about-seeda-container {
+    margin-top: 2rem;
+  }
+}
+
+/* 1000PX for About Seerem */
+@media screen and (max-width: 62.5rem){
+  #about-seerem{
+    display: block;
+  }
+  .about-seerem-container {
+    margin-right: 2rem;
+  }
+  p {
+    max-width: 100%;
+  }
+
+  #about-seerem .image-container{
+    display: block;
+  }
+
+  h2 {
+    /* margin: 0.5rem; */
   }
 }
