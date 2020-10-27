@@ -26,36 +26,6 @@
   width: 100%;
 }
 
-/* Learn More Button Styling */
-.learn-more{
-  margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.more-btn{
-  padding: 1rem 1rem;
-  margin-right: 0.5rem;
-  border-radius: 10px;
-  border: 2px solid #954749;
-  background: #954749;
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.9rem;
-  transition: 0.3s;
-}
-
-.more-btn:hover{
-  border: 2px solid #954749;
-  background: #ffffff;
-  color: #954749;
-}
-
-.more-btn:focus{
-  border: 2px solid #3C3C3C;
-  background: #F5F5F5;
-  color: #3C3C3C;
-}
-
 /* Update Banner Text */
 .updates h2 {
   display: block;
@@ -65,72 +35,55 @@
   padding: 2rem;
 }
 
-.content {
-  min-width: 25%;
-  padding: 2rem;
-  margin: 0rem 4rem;
-}
-
-#about-seeda{
-  margin-bottom: 4rem;
-}
-
-.grid {
-  display: flex;
-  flex-direction: row;
-  /*flex-wrap: wrap;*/
-  width: 100%;
-}
-
-.grid-content {
-  width: 50%;
+/* Styling for About SeeRem content */
+#about-seerem div {
   display: inline;
 }
 
-.grid-content p {
+#about-seerem p {
   margin: 0;
 }
 
-.grid-content img {
-  width: 100%;
+img {
+  width: auto;
+  /* max-width: 90%; */
 }
 
-.grid-content.about-seerem-container{
+/* shared with About Seeda content */
+.image-container {
+ display: inline;
+}
+
+#about-seerem .image-container {
+  flex: 1;
+}
+
+.about-seerem-container {
+  flex: 2;
+  margin-right: 1rem;
+}
+
+
+
+/* Styling for About Seeda content */
+#about-seeda .image-container {
+ flex: 1;
+}
+
+.about-seeda-container {
   flex: 2;
 }
 
-.grid-content.image-container{
-  flex: 1;
+.about-seeda-container p {
+  max-width: 100%;
 }
 
-.grid-content.image-container img{
-  margin-top: 2rem;
+#about-seeda .image-container img {
+max-width: 90%;
 }
 
-/*.seedaLogo {
-  width: 30%
-  flex: 1;
-  padding-right: 4rem;
-  margin-top: 1.5rem;
-}
-
-.seedaLogo img {
+#seedaLogo {
   max-width: 250px;
-}*/
-
-.seedaText {
-  /*width: 70%;*/
-  flex: 2;
-  padding-left: 4rem;
-}
-
-.seedaText p {
-  max-width: 90%;
-}
-
-.seedaText img{
-  max-width: 10rem;
-  margin-bottom: 1rem;
 }
 
 
@@ -141,32 +94,7 @@
     font-size: 0.85rem;
   }
 
-  .content {
-    margin: 0;
-    margin-bottom: 1rem;
-    padding: 1rem;
-  }
-
-  .grid {
-    display: block;
-  }
-
-  .grid-content img, .grid-content p {
-    padding: 0 2rem;
-    width: 80%;
-  }
-
-  .grid-content img {
-    width: 80%;
-  }
-
-  /*h3 {
-    padding-left: 2rem;
-    font-size: 1.5rem;
-  }*/
-
   p {
-    /* padding: 1rem 0; */
     font-size: 0.9rem;
   }
 
@@ -187,14 +115,6 @@
 
 /* 480PX TO 960PX */
 @media screen and (min-width:30rem) and (max-width:60rem){
-  .grid {
-    display: block;
-  }
-
-  .content {
-    padding: 2rem;
-  }
-
   img {
     max-width: 100%;
   }
@@ -205,18 +125,8 @@
     max-width: 100%;
   }
 
-  /*.seedaLogo img {*/
-    /*max-width: 250px;*/
- /*   max-width: 35%;
-    padding: 0;
-  }*/
-
   .seedaLogo, div.seedaText {
     width: 100%;
-  }
-
-  .container {
-    padding: 0;
   }
 
   .container h3 {
