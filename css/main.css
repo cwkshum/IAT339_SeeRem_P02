@@ -303,16 +303,24 @@ footer li{
 	margin-top: 0.5rem;
 }
 
-.footer-services{
+.footer-navigation{
 	flex: 1;
 }
 
-.footer-services a{
+.footer-navigation a{
 	color: #F5F5F5;
 }
 
-.footer-services a:hover{
+.footer-navigation a:hover{
 	color: #AE3034;
+}
+
+.footer-navigation ul{
+	margin-top: -0.3rem;
+	display: inline-block;
+	list-style-type: none;
+	margin-left: -2.5rem;
+	margin-right: 2.5rem;
 }
 
 .footer-contact{
