@@ -24,16 +24,50 @@ function changeNav(){
 } else if(nav == 1){
   $('.nav-link-section a').css("display", "none");
   nav = 0
-}
+  }
 }
 
-function hideNav(){
-  $('.nav-link-section a').css("display", "none");
-}
+// function scrollTo(id){
+//   if ($(id).length) {
+//     var getOffset = $(id).offset().top;
+//     var targetDistance = 20;
+//     $('html,body').animate({
+//       scrollTop: getOffset - targetDistance
+//     }, 500);
+//   }
+// }
+
 
 function select(){
   // if Trial selected, automatically select corresponding radio button
+  // skip to form button
 }
+
+function fillRadio(string){
+  if(string == 'trial') {
+
+    console.log("trial");
+    $('input:radio[id=trialRad]').attr('checked', true);
+    $('input:radio[id=monthlyRad]').attr('checked', false);
+    $('input:radio[id=annualRad]').attr('checked', false);
+
+  } else if(string == 'monthly') {
+
+    console.log("monthly")
+    $('input:radio[id=trialRad]').attr('checked', false);
+    $('input:radio[id=monthlyRad]').attr('checked', true);
+    $('input:radio[id=annualRad]').attr('checked', false);
+
+  } else if(string == 'annual'){
+
+    console.log("annual");
+    $('input:radio[id=trialRad]').attr('checked', false);
+    $('input:radio[id=monthlyRad]').attr('checked', false);
+    $('input:radio[id=annualRad]').attr('checked', true);
+
+  }
+}
+
 
 // setup = function() {
 //

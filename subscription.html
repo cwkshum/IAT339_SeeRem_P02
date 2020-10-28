@@ -18,21 +18,29 @@
     	<!-- Linked Style Sheets -->
     	<link href="css/main.css" rel="stylesheet">
     	<link href="css/subscription.css" rel="stylesheet">
+
+			<!-- JavaScript -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		  	<script src="js/logic.js"></script>
+			<link href="css/java_styling.css" rel="stylesheet">
   	</head>
 
   	<body>
-  		<!-- Navigation -->
-  		<nav class="main-nav">
-  			<div class="nav-logo">
-  				<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
-  			</div>
-  			<div class="nav-link-section">
-		        <a href="index.html" class="nav-link">Home</a>
-				<a href="index.html#services" class="nav-link">Services</a>
-				<a href="index.html#about-seerem" class="nav-link">About</a>
-				<a href="contact.html" class="nav-link">Contact</a>
-		    </div>
-	    </nav>
+			<!-- Navigation -->
+			<nav class="main-nav">
+				<div class="nav-logo">
+					<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
+				</div>
+				<div class="mobile-nav">
+					<p class="btn" onclick="changeNav()">MENU</p>
+				</div>
+				<div class="nav-link-section">
+					<a href="index.html" class="nav-link">Home</a>
+					<a href="#services" class="nav-link">Services</a>
+					<a href="#about-seerem" class="nav-link">About</a>
+					<a href="contact.html" class="nav-link">Contact</a>
+				</div>
+			</nav>
 
 	    <!-- Header -->
 	    <header class="sub-header">
@@ -64,7 +72,8 @@
 		    		<li>Explore all features and functions of SeeRem</li>
 		    		<li>Support documentation access</li>
 		    	</ul>
-					<button class="btn select-btn" href="account.html">Select</button>
+					<!-- onclick="scrollTo('#contact-sales')" -->
+					<button onclick="fillRadio('trial')" class="btn select-btn" href="account.html">Select</button>
 	    	</div>
 			<!-- Second Subscription Plan: Monthly -->
 	    	<div class="subscription-two">
@@ -79,7 +88,7 @@
 		    		<li>Support documentation access</li>
 		    		<li>Access to SeeRem’s direct support line</li>
 		    	</ul>
-					<button class="btn select-btn" href="account.html">Select</button>
+					<button onclick="fillRadio('monthly')" class="btn select-btn" href="account.html">Select</button>
 	    	</div>
 			<!-- First Subscription Plan: Annual -->
 	    	<div class="subscription-three">
@@ -93,7 +102,7 @@
 		    		<li>Support documentation access</li>
 		    		<li>Access to SeeRem’s direct support line</li>
 		    	</ul>
-					<button class="btn select-btn" href="account.html">Select</button>
+					<button onclick="fillRadio('annual')" class="btn select-btn" href="account.html">Select</button>
 	    	</div>
 		</div>
 
@@ -127,15 +136,15 @@
 			  		<div class="form-section">
 	  					<p class="form-label">Subscription Plan</p>
 			  			<label class="radio-btn form-label">Trial
-	 						<input type="radio" name="radio">
-	  						<span class="radio-select"></span>
+	 						<input type="radio" name="radio" checked>
+	  						<span class="radio-select" id="trialRad"></span>
 						</label>
-						<label class="radio-btn form-label">Monthly 
-		 					<input type="radio" name="radio">
+						<label class="radio-btn form-label">Monthly
+		 					<input type="radio" id="monthlyRad" name="radio">
 		  					<span class="radio-select"></span>
 						</label>
 						<label class="radio-btn form-label">Annual
-		 					<input type="radio" name="radio">
+		 					<input type="radio" id="annualRad" name="radio">
 		  					<span class="radio-select"></span>
 						</label>
 			  		</div>
@@ -153,6 +162,8 @@
 				<p>Thank you for contacting our sales team! We will review your subscription request and get back to you shortly with further details on how to complete your subscription purchase. If you do not receive a response within two business days, please contact us <a class="intext-link" href="contact.html">here</a>.</p>
 			</div>
 		</div>
+
+		<div id="scrollUpbtn">TOP</div>
 
 		<!-- Footer -->
 		<footer>
