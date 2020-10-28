@@ -1,6 +1,7 @@
 /* Testing JavaScript functions */
 
 #scrollUpbtn {
+	display: none;
 	position: fixed;
 	bottom: 2rem;
 	right: 2rem;
@@ -14,11 +15,14 @@
 	transition: 0.3s;
 }
 
-#about-nav {
-	display: none;
-	position: fixed;
+#scrollUpbtn:hover {
+	border: 2px solid #954749;
+  background: #ffffff;
+  color: #954749;
 }
 
-.new {
-	display: none;
+#scrollUpbtn:focus {
+	border: 2px solid #3C3C3C;
+  background: #F5F5F5;
+  color: #3C3C3C;
 }
