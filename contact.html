@@ -18,21 +18,30 @@
     	<!-- Linked Style Sheets -->
     	<link href="css/main.css" rel="stylesheet">
     	<link href="css/contact.css" rel="stylesheet">
+
+
+			<!-- JavaScript -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="js/logic.js"></script>			
   	</head>
 
   	<body>
   		<!-- Navigation -->
-  		<nav class="main-nav">
-  			<div class="nav-logo">
-  				<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
-  			</div>
-  			<div class="nav-link-section">
-		        <a href="index.html" class="nav-link">Home</a>
-		        <a href="index.html#services" class="nav-link">Services</a>
-		       	<a href="index.html#about-seerem" class="nav-link">About</a>
-		       	<a href="contact.html" class="nav-link">Contact</a>
-		    </div>
-	    </nav>
+			<nav class="main-nav">
+				<div class="nav-logo">
+					<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
+				</div>
+				<div class="mobile-nav">
+					<p class="btn" onclick="changeNav()">MENU</p>
+				</div>
+				<div class="nav-link-section">
+					<a href="index.html" class="nav-link">Home</a>
+					<a href="#services" class="nav-link">Services</a>
+					<a href="#about-seerem" class="nav-link">About</a>
+					<a href="contact.html" class="nav-link">Contact</a>
+				</div>
+			</nav>
+
 
 	    <!-- Header -->
 	    <header class="sub-header">
@@ -48,13 +57,13 @@
 		    	<!-- Additional Contact Information -->
 		    	<h3>Location</h3>
 		    	<p>Suite 2000, 125 9 Avenue SE, Calgary, AB, T2G 0P6</p>
-		    	
+
 		    	<h3>Email Address</h3>
 		    	<p>support@seerem.com</p>
-		    	
+
 		    	<h3>Phone</h3>
 		    	<p>+1 (403) 966 9848</p>
-		    	
+
 		    	<h3>Social Media</h3>
 		    	<a href="https://twitter.com/SeedaInc" target="_blank"><img src="img/twitter.png" alt="Twitter Logo"></a>
 				<a href="https://www.facebook.com/seeda.ca/?ref=aymt_homepage_panel" target="_blank"><img src="img/facebook.png" alt="Facebook Logo"></a>
@@ -102,6 +111,8 @@
 				<p>Thank you for reaching out to us! Your message has been received and will be reviewed by one of our dedicated team members. We will reach out shortly to respond to your inquiry; if you do not receive a response within 72 hours or your message needs urgent attention, please contact us by phone at +1 (403) 966 9848.
 			</div>
 		</div>
+
+		<div id="scrollUpbtn" onclick="toTop">TOP</div>
 
 		<!-- Footer -->
 		<footer>

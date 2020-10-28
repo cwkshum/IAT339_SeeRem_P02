@@ -25,17 +25,21 @@
 
   	<body>
   		<!-- Navigation -->
-  		<nav class="main-nav">
-  			<div class="nav-logo">
-  				<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
-  			</div>
-  			<div class="nav-link-section">
-		        <a href="index.html" class="nav-link">Home</a>
-		        <a href="index.html#services" class="nav-link">Services</a>
-		       	<a href="index.html#about-seerem" class="nav-link">About</a>
-		       	<a href="contact.html" class="nav-link">Contact</a>
-		    </div>
-	    </nav>
+			<nav class="main-nav">
+				<div class="nav-logo">
+					<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
+				</div>
+				<div class="mobile-nav">
+					<p class="btn" onclick="changeNav()">MENU</p>
+				</div>
+				<div class="nav-link-section">
+					<a href="index.html" class="nav-link">Home</a>
+					<a href="#services" class="nav-link">Services</a>
+					<a href="#about-seerem" class="nav-link">About</a>
+					<a href="contact.html" class="nav-link">Contact</a>
+				</div>
+			</nav>
+
 
 	    <!-- Header -->
 	    <header class="sub-header">
@@ -92,6 +96,8 @@
 				<p>You have successfully created your SeeRem account. The journey to better remote communication starts now! You will receive an email confirming your account details shortly. If you do not receive an email within 1 hour, please contact our team <a class="intext-link" href="contact.html">here</a>.</p>
 			</div>
 		</div>
+
+		<div id="scrollUpbtn" onclick="toTop">TOP</div>
 
 		<!-- Footer -->
 		<footer>

@@ -86,7 +86,6 @@ max-width: 90%;
   max-width: 250px;
 }
 
-
 /* 320PX TO 480PX */
 @media screen and (min-width:20rem) and (max-width:30rem){
   .updates h2 {

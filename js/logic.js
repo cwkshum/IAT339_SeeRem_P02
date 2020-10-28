@@ -1,8 +1,8 @@
 // referenced: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 
-// function toTop() {
-//   document.documentElement.scrollTop = 0;
-// }
+function toTop() {
+  document.body.scrollTo(0,0);
+}
 
 function showConfirmation(){
   $('.account-form-container').css("display", "none");
