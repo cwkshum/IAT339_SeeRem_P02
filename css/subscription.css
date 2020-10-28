@@ -50,6 +50,7 @@ hr{
 	margin-top: 1rem;
 }
 
+/* Contact Sales Container Styling */
 .contact-sales-container{
 	flex: 1;
 	padding: 2rem;
@@ -59,166 +60,15 @@ hr{
 	background: #ffffff;
 }
 
+/* Contact Sales Subheading Styling */
 .contact-sales-container h2{
 	margin-left: 0.8rem;
-}
-
-.select-btn {
-	width: 40%;
-	margin-left: 30%;
-}
-
-
-@media screen and (max-width:30rem){
-	/*body{background-color: red;}*/
-	
-	.container {
-		padding: 0;
-		flex-direction: column;
-	}
-
-	p{
-		max-width: 100%;
-	}
-
-	.image-container{
-		margin: 0 auto;
-		margin-top: 2rem;
-		max-width: 70%;
-	}
-
-	.subscription-container {
-		margin-left: 0.5rem;
-		margin-right: 0.5rem;
-	}
-
-	.form-section{
-		margin-right: 0.2rem;
-	}
-
-	.contact-sales-container{
-		margin-left: 3.5rem;
-		margin-right: 3.5rem;
-	}
-
-	.contact-form{
-		margin-left: 0.5rem;
-		margin-right: 0.5rem;
-	}
-
-	/* change size of text input field */
-	input[type = "text"], input[type="email"]{
-    	width: 100%;
-    }
-
-    .form-section p{
-		margin-bottom: 0;
-	}
-
-    .radio-btn {
-	  	display: block;
-	  	margin-top: 0.3rem;
-	}
-}
-
-/* Decrease Text Input Box and set containers to display block */
-@media screen and (min-width:30rem) and (max-width: 50rem){
-	/*body{background-color: orange;}*/
-	/* change size of text input field */
-	input[type = "text"], input[type="email"]{
-    	width: 12rem;
-    }
-
-    .container{
-		flex-direction: column;
-	}
-
-	p{
-		max-width: 100%;
-	}
-
-	.image-container{
-		margin: 0 auto;
-		margin-top: 2rem;
-		max-width: 75%;
-	}
-
-	.contact-sales-container{
-		padding: 2rem;
-		margin-left: 2rem;
-		margin-bottom: 3rem;
-		background: #ffffff;
-	}
-}
-
-@media screen and (min-width:50rem) and (max-width:56rem){
-	/*body{background-color: yellow;}*/
-	.container{
-		flex-direction: column;
-	}
-
-	p{
-		max-width: 100%;
-	}
-
-	.image-container{
-		margin: 0 auto;
-		margin-top: 2rem;
-		max-width: 75%;
-	}
-}
-
-/* Decrease Text Input Box to create columns in the form */
-@media screen and (min-width: 56rem) and (max-width: 68rem){
-	/*body{background-color: green;}*/
-	/* change size of text input field */
-	input[type = "text"], input[type="email"]{
-    	width: 14rem;
-    }
-}
-
-@media screen and (min-width: 68rem){
-	/* change size of text input field */
-	input[type = "text"], input[type="email"]{
-    	width: 20rem;
-    }
-
-    .form-section{
-		margin-right: 10%;
-	}
-}
-
-/* on screens that are 78em or more, increase text input box size */
-@media screen and (min-width: 78rem){
-	/*body{background-color: lightblue;}*/
-	/*change size of text input field */
-	input[type = "text"], input[type="email"]{
-    	width: 24rem;
-	}
-}
-
-/* on screens that are 90em or more, increase text input box size */
-@media screen and (min-width: 90rem){
-	/*body{background-color: blue;}*/
-	/*change size of text input field */
-	input[type = "text"], input[type="email"]{
-    	width: 28rem;
-	}
-}
-
-/*on screens that are 108em or more, increase text input box size*/
-@media screen and (min-width: 108rem){
-	/*body{background-color: purple;}*/
-	/* change size of text input field */
-	input[type = "text"], input[type="email"]{
-    	width: 35rem;
-	}
 }
 
 /* Submit Button Styling*/
 .contact-sales{
 	margin-left: -1rem;
-	margin-top: 3rem;
+	margin-top: 1.5rem;
 }
 
 .action-btn{
@@ -242,4 +92,395 @@ hr{
 	border: 2px solid #3C3C3C;
 	background: #F5F5F5;
 	color: #3C3C3C;
+}
+
+/* Select Button Styling */
+.select-btn {
+	width: 40%;
+	margin-left: 30%;
+}
+
+/* MEDIA QUERIES */
+/* Screen size of 480px or less */
+@media screen and (max-width:30rem){
+	
+	.sub-header{
+		padding: 2.5rem 3.5rem;
+	}
+
+	.sub-header h1{
+		font-size: 1.4rem;
+	}
+
+	.container {
+		padding: 0;
+		flex-direction: column;
+	}
+
+	p{
+		max-width: 100%;
+	}
+
+	.image-container{
+		margin: 0 auto;
+		margin-top: 2rem;
+		max-width: 70%;
+	}
+
+	.subscription-container {
+		margin-left: 0.2rem;
+		margin-right: 0.2rem;
+		flex-direction: column;
+	}
+
+	.subscription-container ul{
+		margin-left: -1.5rem;
+	}
+
+	.subscription-one, .subscription-two, .subscription-three{	
+		padding: 1.8rem 1.5rem;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.subscription-container h4{
+		font-size: 1.2rem;
+	}
+
+	.form-section{
+		display: block;
+		margin-right: 1rem;
+		margin-bottom: -1.5rem;
+	}
+
+	.contact-sales-container{
+		margin-left: 2.5rem;
+		margin-right: 2.5rem;
+	}
+
+	.contact-form{
+		margin-left: -0.3rem;
+		margin-right: 0.5rem;
+	}
+
+	/* change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 100%;
+    }
+
+    .form-section p{
+		margin-bottom: 0;
+	}
+
+    .radio-btn {
+	  	display: block;
+	  	margin-top: 0.3rem;
+	}
+
+	.contact-sales{
+		margin-top: 3rem;
+	}
+
+	.confirmation-container{
+		margin: 2rem 2.5rem;
+	}
+}
+
+/* Screen size of 480px - 800px */
+@media screen and (min-width:30rem) and (max-width: 50rem){
+	
+	.sub-header{
+		padding: 3rem 6rem;
+	}
+
+	.sub-header h1{
+		font-size: 1.6rem;
+	}
+
+    .container{
+		flex-direction: column;
+	}
+
+	p{
+		max-width: 100%;
+	}
+
+	.image-container{
+		margin: 0 auto;
+		margin-top: 2rem;
+		max-width: 75%;
+	}
+
+	.subscription-container {
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		flex-direction: column;
+	}
+
+	.subscription-container h4{
+		font-size: 1.5rem;
+	}
+
+	.subscription-container ul{
+		margin-left: 2%;
+	}
+
+	.form-section{
+		display: block;
+		margin-right: 1.5rem;
+		margin-bottom: -1.5rem;
+	}
+
+	.contact-sales-container{
+		padding: 2rem;
+		margin: 0 1.5rem;
+	}
+
+	.contact-form{
+		margin-left: -0.2rem;
+		margin-right: 1rem;
+	}
+
+	/* change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 100%;
+    }
+
+    .form-section p{
+		margin-bottom: 0;
+	}
+
+    .radio-btn {
+	  	display: block;
+	  	margin-top: 0.3rem;
+	}
+
+	.contact-sales{
+		margin-top: 3rem;
+	}
+
+	.confirmation-container{
+		margin: 2rem 1.5rem;
+	}
+}
+
+/* Screen size of 800px - 896px */
+@media screen and (min-width: 50rem) and (max-width: 56rem){
+
+	.container{
+		flex-direction: column;
+	}
+
+	p{
+		max-width: 100%;
+	}
+
+	.image-container{
+		margin: 0 auto;
+		margin-top: 2rem;
+		max-width: 75%;
+	}
+
+	.subscription-container {
+		margin-left: 2.5rem;
+		margin-right: 2.5rem;
+		flex-direction: column;
+	}
+
+	.subscription-container ul{
+		margin-left: 12%;
+	}
+
+	.form-section{
+		display: block;
+		margin-right: 1.5rem;
+		margin-bottom: -1.5rem;
+	}
+
+	.contact-sales-container{
+		padding: 2rem;
+		margin: 1rem 3.5rem;
+	}
+
+	.contact-form{
+		margin-left: -0.2rem;
+		margin-right: 1rem;
+	}
+
+	/* change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 100%;
+    }
+
+    .form-section p{
+		margin-bottom: 0;
+	}
+
+    .radio-btn {
+	  	display: block;
+	  	margin-top: 0.4rem;
+	}
+
+	.contact-sales{
+		margin-top: 3rem;
+	}
+
+	.confirmation-container{
+		margin: 1.5rem 3.5rem;
+	}
+}
+
+/* Screen size of 896px - 1088px */
+@media screen and (min-width: 56rem) and (max-width: 68rem){
+	
+	.container{
+		flex-direction: column;
+	}
+
+	p{
+		max-width: 100%;
+	}
+
+	.image-container{
+		margin: 0 auto;
+		margin-top: 2rem;
+		max-width: 70%;
+	}
+
+	.subscription-container {
+		margin-left: 2.5rem;
+		margin-right: 2.5rem;
+		flex-direction: column;
+	}
+
+	.subscription-container ul{
+		margin-left: 12%;
+	}
+
+	.form-section{
+		width: 40%;
+		margin-bottom: -1.5rem;
+		margin-right: 4.5rem;
+	}
+
+	.contact-sales-container, .confirmation-container{
+		margin-left: 3.5rem;
+		margin-right: 3.5rem;
+	}
+
+	.contact-form{
+		margin-left: -0.2rem;
+		margin-right: 1rem;
+	}
+
+	/* change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	/*width: 14rem;*/
+    	width: 100%;
+    }
+
+    .radio-btn {
+    	display: block;
+	  	padding-left: 1.5rem;
+	  	margin-top: 0.5rem;
+	}
+}
+
+/* Screen size of 1088px - 1248px */
+@media screen and (min-width: 68rem) and (max-width: 78rem){
+
+	.form-section{
+		width: 40%;
+		margin-bottom: -1.5rem;
+		margin-right: 10%;
+	}
+
+	.contact-form{
+		margin-left: -0.2rem;
+		margin-right: 1rem;
+	}
+
+	.radio-btn{
+		margin-right: 2rem;
+	}
+
+	/* change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	/*width: 14rem;*/
+    	width: 100%;
+    }
+}
+
+/* Screen size of 1248px - 1440px */
+@media screen and (min-width: 78rem) and (max-width: 90rem){
+
+	.form-section{
+		width: 40%;
+		margin-bottom: -1.5rem;
+		margin-right: 4.5rem;
+	}
+
+	.contact-sales-container{
+		padding-left: 5%;
+	}
+
+	.contact-form{
+		margin-left: -0.2rem;
+		margin-right: 1rem;
+	}
+
+	/*change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	/*width: 24rem;*/
+    	width: 100%;
+	}
+}
+
+/* Screen size of 1440px - 1728px */
+@media screen and (min-width: 90rem) and (max-width: 108rem){
+
+	.form-section{
+		width: 40%;
+		margin-bottom: -1.5rem;
+		margin-right: 10%;
+	}
+
+	.contact-sales-container{
+		padding-left: 5%;
+	}
+
+	.contact-form{
+		margin-left: -0.2rem;
+		margin-right: 1rem;
+	}
+
+	/*change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	/*width: 28rem;*/
+    	width: 100%;
+	}
+}
+
+/* Screen size of 1728 or more*/
+@media screen and (min-width: 108rem){
+
+	.form-section{
+		width: 40%;
+		margin-bottom: -1.5rem;
+		margin-right: 10%;
+	}
+
+	.contact-sales-container{
+		padding-left: 5%;
+	}
+
+	.contact-form{
+		margin-left: -0.2rem;
+		margin-right: 1rem;
+	}
+
+	/* change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 100%;
+	}
 }
