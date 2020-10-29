@@ -18,6 +18,10 @@
     	<!-- Linked Style Sheets -->
     	<link href="css/main.css" rel="stylesheet">
     	<link href="css/citations.css" rel="stylesheet">
+
+    	<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  	<script src="js/logic.js"></script>
   	</head>
 
   	<body>
@@ -26,6 +30,9 @@
   			<div class="nav-logo">
   				<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
   			</div>
+  			<div class="mobile-nav">
+				<p class="btn" onclick="changeNav()">MENU</p>
+			</div>
   			<div class="nav-link-section">
 		        <a href="index.html" class="nav-link">Home</a>
 		        <a href="index.html#services" class="nav-link">Services</a>
@@ -43,15 +50,29 @@
 	    	<div class="citations">
 		    	<ul>
 		    		<li>Baker, K. (2017). Person on computer. [Photograph]. Retrieved from <a href="https://unsplash.com/photos/vZJdYl5JVXY" target="_blank">https://unsplash.com/photos/vZJdYl5JVXY</a></li>
+					
 					<li>Blake, S. (2018). Construction site. [Photograph]. Retrieved from <a href="https://unsplash.com/photos/x-ghf9LjrVg" target="_blank">https://unsplash.com/photos/x-ghf9LjrVg</a></li>
+					
+					<li>Facebook. (2020). "f" logo. [Logo]. Retrieved from <a href="https://en.facebookbrand.com/facebookapp/assets/f-logo/" target="_blank">https://en.facebookbrand.com/facebookapp/assets/f-logo/</a></li>
+		    		
 		    		<li>Google Fonts. (2020). Open sans: Regular 400. Retrieved from <a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">https://fonts.google.com/specimen/Open+Sans</a></li>
+					
 					<li>Google Fonts. (2020). Work sans: Semi-bold 600 and Bold 700. Retrieved from <a href="https://fonts.google.com/specimen/Work+Sans" target="_blank">https://fonts.google.com/specimen/Work+Sans</a></li>
+
+					<li>LinkedIn. (2020). LinkedIn logo. [Logo]. Retrieved from <a href="https://brand.linkedin.com/downloads">https://brand.linkedin.com/downloads</a></li>
+					
 					<li>Seeda. (2020). Improve projects. Retrieved from <a href="https://www.seeda.ca/home">https://www.seeda.ca/home</a></li>
+					
 					<li>Seeda. (2020). Seeda company logo. [Logo]. Retrieved from <a href="https://www.seeda.ca/home">https://www.seeda.ca/home</a></li>
+
+					<li>Twitter. (2020). Twitter logo. [Logo]. Retrieved from <a href="https://about.twitter.com/en_us/company/brand-resources.html" target="_blank">https://about.twitter.com/en_us/company/brand-resources.html</a></li>
+					
 					<li>W3Schools. (2020). How to create a custom checkbox. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_custom_checkbox.asp" target="_blank">https://www.w3schools.com/howto/howto_css_custom_checkbox.asp</a></li>
 		    	</ul>
 		    </div>
 		</div>
+
+		<div id="scrollUpbtn" onclick="toTop()">TOP</div>
 
 		<!-- Footer -->
 		<footer>
@@ -62,10 +83,13 @@
 					<li><a href="index.html#about-seerem">About</a></li>
 					<li><a href="index.html#services">Services</a></li>
 					<li><a href="subscription.html">Subscription</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
 				<ul>
-					<li><a href="account.html">Registration</a></li>
+					<li><a href="account.html">Account</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="index.html#about-seeda">Seeda</a></li>
+				</ul>
+				<ul>
 					<li><a href="citations.html" target="_blank">Citations</a></li>
 					<li><a href="styleguide.html" target="_blank">Style Guide</a></li>
 					<li><a href="https://github.com/cwkshum/IAT339_SeeRem_P02" target="_blank">GitHub</a></li>
