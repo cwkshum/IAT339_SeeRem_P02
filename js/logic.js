@@ -1,7 +1,13 @@
 // referenced: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 
+// https://javascript.info/onscroll
+window.addEventListener('scroll', function(){
+  $('#scrollUpbtn').css("display", "block");
+});
+
 function toTop() {
-  document.body.scrollTo(0,0);
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 function showConfirmation(){
@@ -27,6 +33,14 @@ function changeNav(){
   }
 }
 
+// if nav == 0 and media query match
+//   $('.nav-link-section a').css("display", "block");
+
+
+
+
+
+
 // function scrollTo(id){
 //   if ($(id).length) {
 //     var getOffset = $(id).offset().top;
@@ -36,12 +50,6 @@ function changeNav(){
 //     }, 500);
 //   }
 // }
-
-
-function select(){
-  // if Trial selected, automatically select corresponding radio button
-  // skip to form button
-}
 
 function fillRadio(string){
   if(string == 'trial') {
