@@ -31,37 +31,57 @@ function scrollFunction(string){
   }
 };
 
-// mobile navigation toggle
+// Change Mobile Nav on button click
 var nav = 0; // off as default
 
 function changeNav(){
-  if(nav == 0 ){
-    if($(window).width() <= 560){
-  $('.nav-link-section a').css("display", "block");
-} else {
-  $('.nav-link-section a').css("display", "inline");
-  }
-  nav = 1;
-  // $('mobile-nav').css("order","2");
-  // $('nav-link-section').css("order","3");
-} else if(nav == 1){
-  $('.nav-link-section a').css("display", "none");
-  nav = 0
+  if(nav==0){
+    if($(window).width()<=560){
+
+      $('.nav-link-section a').css("display", "block");
+      currentDisplay = "block";
+      nav=1;
+    } else if($(window).width()>=560){
+      $('.nav-link-section a').css("display", "inline");
+      currentDisplay = "inline";
+      nav=1;
+    }
+
+  } else if(nav==1){
+    $('.nav-link-section a').css("display", "none");
+    currentDisplay = "none";
+    nav=0;
   }
 }
 
 // media queries
+ // if($(window).resize(changeNav()));
+
+
 $(window).resize(function(){
-  if($(window).width() >= 560){
+  if ($(window).width()>=960){
     $('.nav-link-section a').css("display", "inline");
-  } else if($(window).width() <= 580){
-    $('.nav-link-section a').css("display", "block");}
-  if($(window).width() >=960){
-    nav = 0;
+    nav=0;
   }
-});
+  });
+
+$(window).resize(function(){
+  if ($(window).width()>=560 && $(window).width()<=960){
+       $('.nav-link-section a').css("display", "inline");
+    // nav=0;
+     // changeNav();
+  }
+  });
 
 
+$(window).resize(function(){
+  if ($(window).width()<=560){
+     $('.nav-link-section a').css("display", "block");
+
+   // nav=0;
+    // changeNav();
+  }
+  });
 
 
 // When the user selects a subscription tier, the radio buttons on the form are selected automatically
