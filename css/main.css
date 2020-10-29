@@ -366,7 +366,7 @@ footer li{
 
 .mobile-nav {
 	padding-top: 0;
-  	display: none;
+  display: none;
 }
 
 .mobile-nav .btn {
@@ -484,7 +484,7 @@ footer li{
 	}
 }
 
-
+/* 480 to 1040 */
 @media screen and (min-width:30rem) and (max-width:65rem){
 
 	.nav-logo {
@@ -503,7 +503,7 @@ footer li{
 	}
 
 	.nav-link-section a {
-		display: none;
+		display: inline;
 	}
 
 	.mobile-nav {
@@ -537,6 +537,7 @@ footer li{
 	}
 }
 
+/* 1040 to 1440 */
 @media screen and (min-width:65rem) and (max-width:90rem){
 	.footer-social img{
 		width: 20%;
@@ -545,6 +546,7 @@ footer li{
 }
 
 /* ADDITIONAL BREAKPOINTS FOR MOBILE NAV */
+
 /* BELOW 560PX */
 @media screen and (max-width:35rem){
 	.main-nav{
@@ -590,6 +592,20 @@ footer li{
 	}
 }
 
+/* 480 to 560 */
+@media screen (min-width: 30rem) and (max-width:35rem){
+	.main-nav{
+		width: 100vw;
+		display: inline-block;
+		padding: 0;
+		text-align: center;
+	}
+
+	.nav-logo {
+		flex: 3;
+		margin-right: 7rem;
+	}
+}
 /* 680px to 900px */
 @media screen and (min-width: 42.5rem) and (max-width: 56.25rem){
 	.nav-link {
@@ -598,4 +614,28 @@ footer li{
 	.nav-link-section {
 		padding: 0;
 	}
+}
+
+/* 900 to 1040 */
+@media screen and (min-width: 56.25rem) and (max-width: 65rem){
+	.mobile-nav {
+		display: none;
+	}
+	.nav-link-section {
+		padding: 1.1rem;
+	}
+}
+
+/* 900 to 960 */
+@media screen and (min-width:56.25rem) and (max-width:60rem){
+	.nav-link-section{
+		display: block;
+		/* padding: 1.1rem; */
+	}
+	.nav-link-section a {
+		display: block;
+	}
+ .mobile-nav {
+	 display: block;
+ }
 }

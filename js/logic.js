@@ -59,28 +59,31 @@ function changeNav(){
 
 
 $(window).resize(function(){
+
+  });
+
+$(window).resize(function(){
+  console.log('resized');
+  $('.nav-link-section a').css("display", "none");
+  nav = 0;
+
   if ($(window).width()>=960){
     $('.nav-link-section a').css("display", "inline");
     nav=0;
   }
-  });
 
-$(window).resize(function(){
-  if ($(window).width()>=560 && $(window).width()<=960){
-       $('.nav-link-section a').css("display", "inline");
-    // nav=0;
-     // changeNav();
-  }
-  });
+  // if ($(window).width()>=560 && $(window).width()<=960){
+  //      $('.nav-link-section a').css("display", "inline");
+  //   // nav=0;
+  //    // changeNav();
+  // }
 
-
-$(window).resize(function(){
-  if ($(window).width()<=560){
-     $('.nav-link-section a').css("display", "block");
-
-   // nav=0;
-    // changeNav();
-  }
+  // if ($(window).width()<=560){
+  //    $('.nav-link-section a').css("display", "block");
+  //
+  //  // nav=0;
+  //   // changeNav();
+  // }
   });
 
 
