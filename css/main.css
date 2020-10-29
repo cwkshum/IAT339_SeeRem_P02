@@ -435,6 +435,7 @@ footer li{
 
 	.nav-logo {
 		flex: 2;
+		margin-right: 7rem;
 	}
 
 	.nav-link-section {
@@ -488,6 +489,7 @@ footer li{
 
 	.nav-logo {
 		flex: 3;
+		margin-left: 0;
 	}
 
 	.nav-link{
