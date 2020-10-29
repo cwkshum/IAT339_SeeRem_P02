@@ -3,7 +3,8 @@
 	flex: 1;
 	order: 2;
 	margin-top: 1.5rem;
-	margin-right: 4.5rem;
+	/*margin-right: 4.5rem;*/
+	margin-right: 1rem;
 }
 
 .image-container img{
@@ -14,8 +15,10 @@
 .account-form-container{
 	flex: 1;
 	padding: 2rem;
-	margin-left: 3rem;
-	margin-right: 4.5rem;
+	/*margin-left: 3rem;
+	margin-right: 4.5rem;*/
+	margin-left: 1rem;
+	margin-right: 1rem;
 	margin-bottom: 3rem;
 	background: #ffffff;
 }
@@ -38,11 +41,9 @@ input[type = "text"], input[type="email"]{
 }
 
 /* MEDIA QUERIES */
-/* Screen size of 480px or less */
-@media screen and (max-width:30rem){
-
+@media screen and (max-width:20rem){
 	.sub-header{
-		padding: 2.5rem 3.5rem;
+		padding: 2.5rem 2.4rem;
 	}
 
 	.sub-header h1{
@@ -50,7 +51,53 @@ input[type = "text"], input[type="email"]{
 	}
 
 	.container {
-		padding: 0;
+		flex-direction: column;
+	}
+
+	p{
+		max-width: 100%;
+	}
+
+	.image-container{
+		margin: 0 auto;
+		margin-top: 2rem;
+		max-width: 100%;
+	}
+
+	.account-form-container {
+		margin-top: 3rem;
+		margin-left: -1.6rem;
+	}
+
+	.account-form{
+		margin-left: -0.3rem;
+		margin-right: 1rem;
+	}
+
+	.form-section{
+		display: block;
+		margin-right: 1.5rem;
+		margin-bottom: -1.5rem;
+	}
+
+	/* change size of text input field */
+	input[type = "text"], input[type="email"]{
+    	width: 100%;
+    }
+}
+
+/* Screen size of 320px - 480px */
+@media screen and (min-width:20rem) and (max-width:30rem){
+
+	.sub-header{
+		padding: 2.5rem 2.4rem;
+	}
+
+	.sub-header h1{
+		font-size: 1.4rem;
+	}
+
+	.container {
 		flex-direction: column;
 	}
 
@@ -66,13 +113,11 @@ input[type = "text"], input[type="email"]{
 
 	.account-form-container {
 		margin-top: 3rem;
-		margin-left: 2.5rem;
-		margin-right: 2.5rem;
 	}
 
 	.account-form{
 		margin-left: -0.3rem;
-		margin-right: 0.5rem;
+		margin-right: 1rem;
 	}
 
 	.form-section{
@@ -85,17 +130,13 @@ input[type = "text"], input[type="email"]{
 	input[type = "text"], input[type="email"]{
     	width: 100%;
     }
-
-    .confirmation-container{
-		margin: 2rem 2.5rem;
-	}
 }
 
 /* Screen size of 480px - 800px */
 @media screen and (min-width: 30rem) and (max-width: 50rem){
-	
+
 	.sub-header{
-		padding: 3rem 6rem;
+		padding: 3rem 3.8rem;
 	}
 
 	.sub-header h1{
@@ -118,7 +159,6 @@ input[type = "text"], input[type="email"]{
 
 	.account-form-container{
 		padding: 2rem;
-		margin: 0 1.5rem;
 	}
 
 	.account-form{
@@ -144,7 +184,7 @@ input[type = "text"], input[type="email"]{
 
 /* Screen size of 800px - 896px */
 @media screen and (min-width: 50rem) and (max-width: 56rem){
-	
+
 	.container{
 		flex-direction: column;
 	}
@@ -161,7 +201,6 @@ input[type = "text"], input[type="email"]{
 
 	.account-form-container{
 		padding: 2rem;
-		margin: 1rem 3.5rem;
 	}
 
 	.account-form{
@@ -202,20 +241,14 @@ input[type = "text"], input[type="email"]{
 		max-width: 70%;
 	}
 
-	.account-form-container, .confirmation-container{
-		margin-left: 3.5rem;
-		margin-right: 3.5rem;
-	}
-
 	.account-form{
 		margin-left: -0.2rem;
-		margin-right: 1rem;
 	}
 
 	.form-section{
 		width: 40%;
 		margin-bottom: -1.5rem;
-		margin-right: 4.5rem;
+		margin-right: 5rem;
 	}
 
 	/* change size of text input field */
@@ -230,7 +263,6 @@ input[type = "text"], input[type="email"]{
 	
 	.account-form{
 		margin-left: -0.2rem;
-		margin-right: 1rem;
 	}
 
     .form-section{
@@ -248,19 +280,19 @@ input[type = "text"], input[type="email"]{
 
 /* Screen size of 1248px - 1440px */
 @media screen and (min-width: 78rem) and (max-width: 90rem){
+	
 	.account-form-container{
 		padding-left: 5%;
 	}
 
 	.account-form{
 		margin-left: -0.2rem;
-		margin-right: 1rem;
 	}
 
 	.form-section{
 		width: 40%;
 		margin-bottom: -1.5rem;
-		margin-right: 4.5rem;
+		margin-right: 10%;
 	}
 
 	/*change size of text input field */
@@ -272,13 +304,13 @@ input[type = "text"], input[type="email"]{
 
 /* Screen size of 1440px - 1728px */
 @media screen and (min-width: 90rem) and (max-width: 108rem){
+	
 	.account-form-container{
 		padding-left: 5%;
 	}
 
 	.account-form{
 		margin-left: -0.2rem;
-		margin-right: 1rem;
 	}
 
 	.form-section{
@@ -303,7 +335,6 @@ input[type = "text"], input[type="email"]{
 
 	.account-form{
 		margin-left: -0.2rem;
-		margin-right: 1rem;
 	}
 
 	.form-section{
