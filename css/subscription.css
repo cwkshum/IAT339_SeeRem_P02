@@ -105,7 +105,7 @@ hr{
 @media screen and (max-width:30rem){
 	
 	.sub-header{
-		padding: 2.5rem 2.4rem;
+		padding: 2.5rem 3.8rem;
 	}
 
 	.sub-header h1{
@@ -149,11 +149,6 @@ hr{
 		margin-right: 1rem;
 		margin-bottom: -1.5rem;
 	}
-
-	/*.contact-sales-container{
-		margin-left: 2.5rem;
-		margin-right: 2.5rem;
-	}*/
 
 	.contact-form{
 		margin-left: -0.3rem;
@@ -328,8 +323,6 @@ hr{
 	}
 
 	.subscription-container {
-		/*margin-left: 2.5rem;
-		margin-right: 2.5rem;*/
 		flex-direction: column;
 	}
 

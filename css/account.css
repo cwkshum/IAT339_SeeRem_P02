@@ -43,7 +43,7 @@ input[type = "text"], input[type="email"]{
 /* MEDIA QUERIES */
 @media screen and (max-width:20rem){
 	.sub-header{
-		padding: 2.5rem 2.4rem;
+		padding: 2.5rem 3.8rem;
 	}
 
 	.sub-header h1{
@@ -90,7 +90,7 @@ input[type = "text"], input[type="email"]{
 @media screen and (min-width:20rem) and (max-width:30rem){
 
 	.sub-header{
-		padding: 2.5rem 2.4rem;
+		padding: 2.5rem 3.8rem;
 	}
 
 	.sub-header h1{

@@ -84,7 +84,7 @@
 @media screen and (max-width:30rem){
 
   .main-header{
-    padding: 3.5rem 2rem;
+    padding: 3.5rem 3.8rem;
   }
 
   .main-header h1{
@@ -136,7 +136,7 @@
 @media screen and (min-width:30rem) and (max-width: 50rem){
 
   .main-header{
-    padding: 5rem 3.5rem;
+    padding: 5rem 3.8rem;
   }
 
   .main-header h1{
