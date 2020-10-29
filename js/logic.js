@@ -1,24 +1,19 @@
 // referenced: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-
 // https://javascript.info/onscroll
+
+// display the scrollUpbtn after the user has scrolled
 window.addEventListener('scroll', function(){
   $('#scrollUpbtn').css("display", "block");
 });
 
+// scroll to the top, activated when the scrollUpbtn is clicked
 function toTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
-function showConfirmation(){
-  $('.account-form-container').css("display", "none");
-  $('.confirmation-container').css("display", "block");
-}
 
-function hideConfirmation(){
-  $('.confirmation-container').css("display", "none");
-}
-
+// mobile navigation toggle
 var nav = 0; // off as default
 
 function changeNav(){
@@ -40,17 +35,7 @@ function changeNav(){
 
 
 
-
-// function scrollTo(id){
-//   if ($(id).length) {
-//     var getOffset = $(id).offset().top;
-//     var targetDistance = 20;
-//     $('html,body').animate({
-//       scrollTop: getOffset - targetDistance
-//     }, 500);
-//   }
-// }
-
+// When the user selects a subscription tier, the radio buttons on the form are selected automatically
 function fillRadio(string){
   if(string == 'trial') {
 
@@ -76,17 +61,4 @@ function fillRadio(string){
   }
 }
 
-
-// setup = function() {
-//
-// }
-
 jQuery(document).ready()
-
-// from index.html
-// <!-- <button onclick="showMore()" class="more-btn" type="button">Learn More</button> -->
-//
-// <!-- <div class="new">
-//   <p>New Text</p>
-//   <button onclick="hideMore()" class="close-new">Show Less</button>
-// </div> -->
