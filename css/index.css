@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-left: -2rem;
   margin-right: -2rem;
 }
@@ -56,28 +56,43 @@
   margin-right: 1rem;
 }
 
-#about-seeda .image-container {
+.seerem.container{
+  align-items: center;
+}
+
+.features.image-container {
   flex: 1;
+  order: 1;
   margin-left: 1rem;
 }
 
-#about-seeda .image-container img {
-  width: 100%;
+.features.image-container img, .benefits.image-container img {
+  width: 90%;
 }
 
-.about-seeda-container {
-  flex: 2;
+.seeda-features-container {
+  flex: 1;
+  order: 2;
   padding-right: 1rem;
   padding-left: 5rem;
   margin-bottom: 2rem;
 }
 
-.about-seeda-container p {
-  max-width: 100%;
+.seeda-benefits-container {
+  flex: 1;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
 }
 
-.seedaLogo {
-  max-width: 12rem;
+.benefits.image-container {
+  flex: 1;
+  order: 1;
+  padding-left: 2rem;
+  /*margin-right: -2rem;*/
+}
+
+.seeda-features-container p {
+  max-width: 100%;
 }
 
 /* Screen size of 480px or less */
@@ -105,7 +120,7 @@
     flex-direction: column;
   }
 
-  .page-description p {
+  .page-description p, .seeda-benefits-container p {
     max-width: 100%;
   }
 
@@ -120,14 +135,23 @@
     margin-top: 1rem;
   }
 
-  .about-seeda-container {
+  .seeda-features-container {
+    order: 1;
     padding-left: 1rem;
   }
 
-  #about-seeda .image-container{
+  .features.image-container{
+    order: 2;
     margin: 0 auto;
-    margin-top: -1.5rem;
-    margin-bottom: 2rem;
+    max-width: 90%;
+  }
+
+  .seeda-benefits-container {
+    padding-left: 1rem;
+  }
+
+  .benefits.image-container{
+    margin: 0 auto;
     max-width: 90%;
   }
 }
@@ -157,7 +181,7 @@
     flex-direction: column;
   }
 
-  .page-description p {
+  .page-description p, .seeda-benefits-container p {
     max-width: 100%;
   }
 
@@ -176,14 +200,23 @@
     padding: 3.5rem;
   }
 
-  .about-seeda-container {
+  .seeda-features-container {
+    padding-left: 1rem;
+    order: 1;
+  }
+
+  .features.image-container{
+    order: 2;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .seeda-benefits-container {
     padding-left: 1rem;
   }
 
-  #about-seeda .image-container{
+  .benefits.image-container{
     margin: 0 auto;
-    margin-top: -1.5rem;
-    margin-bottom: 2rem;
     max-width: 90%;
   }
 }
@@ -208,7 +241,7 @@
     flex-direction: column;
   }
 
-  .page-description p {
+  .page-description p, .seeda-benefits-container p {
     max-width: 100%;
   }
 
@@ -235,14 +268,23 @@
     margin-bottom: 1rem;
   }
 
-  .about-seeda-container {
+  .seeda-features-container {
+    order: 1;
     padding-left: 1rem;
   }
 
-  #about-seeda .image-container{
+  .features.image-container{
+    order: 2;
     margin: 0 auto;
-    margin-top: -5rem;
-    margin-bottom: 3rem;
+    max-width: 80%;
+  }
+
+  .seeda-benefits-container {
+    padding-left: 1rem;
+  }
+
+  .benefits.image-container{
+    margin: 0 auto;
     max-width: 80%;
   }
 }
