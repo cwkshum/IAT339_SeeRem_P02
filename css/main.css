@@ -61,6 +61,7 @@ a:hover, .intext-link:hover, .intext-link:focus{
 
 .nav-logo{
 	flex: 1;
+	margin-left: 0;
 }
 
 /* Navigation Links */
@@ -366,7 +367,7 @@ footer li{
 
 .mobile-nav {
 	padding-top: 0;
-  display: none;
+  /* display: none; */
 }
 
 .mobile-nav .btn {
@@ -409,6 +410,7 @@ footer li{
 @media screen and (max-width:20rem){
 	.main-nav, .mobile-nav, .nav-link-section {
 		display: block;
+		text-align: center;
 	}
 	.nav-link-section a {
 		display: none;
@@ -423,10 +425,7 @@ footer li{
 	}
 
 	.main-nav{
-		width: 100vw;
-		display: inline-block;
-		padding: 0;
-		text-align: center;
+		padding: 0.4rem 2.5rem;
 	}
 
 	.nav-logo, .mobile-nav {
@@ -435,7 +434,7 @@ footer li{
 
 	.nav-logo {
 		flex: 2;
-		margin-right: 7rem;
+		/* margin-right: 7rem; */
 	}
 
 	.nav-link-section {
@@ -453,8 +452,10 @@ footer li{
 	.mobile-nav {
 		flex: 1;
 		right: 0;
-		order: 2;
+		/* order: 2; */
 		font-size: 1rem;
+		position: absolute;
+		right: 2.5rem;
 	}
 
 	.nav-link{
@@ -498,17 +499,18 @@ footer li{
 	}
 
 	.nav-link-section {
-		order: 2;
-		padding: 0;
+		/* order: 2; */
 	}
 
 	.nav-link-section a {
-		display: inline;
+		display: inline-block;
 	}
 
 	.mobile-nav {
-	  display: inline;
-		order: 3;
+		position: absolute;
+		right: 2.5rem;
+	  display: none;
+		/* order: 3; */
 	}
 
 	footer {
@@ -547,105 +549,43 @@ footer li{
 
 /* ADDITIONAL BREAKPOINTS FOR MOBILE NAV */
 
-/* BELOW 560PX */
-@media screen and (max-width:35rem){
-	.main-nav{
-		width: 100vw;
-		display: inline-block;
-		padding: 0;
-		text-align: center;
+/* below 960px */
+@media screen and (max-width:60rem){
+	.main-nav {
+		display: block;
 	}
-
 	.nav-logo, .mobile-nav {
 		display: inline-block;
+
+		/* order: 2; */
 	}
 
-	.nav-logo {
-		flex: 2;
-	}
-
-	.nav-link-section {
-		display: block;
-		padding-top: 0.3rem;
-		font-size: 1rem;
-	}
-
-	.nav-link-section a {
-		display: none;
-		font-size: 1.2rem;
-		padding: 0.5rem;
-		border-top: 2px solid #ddd;
-		text-align: center;
-	}
-
-	.nav-link-section a:hover{
-		color: #ffffff;
-		border-bottom: 1px solid #954749;
-		border-top: 2px solid #954749;
-		background: #954749;
+	.nav-logo{
+		/* padding-right: 60%; */
 	}
 
 	.mobile-nav {
-		flex: 1;
-		right: 0;
-		order: 2;
-		font-size: 1rem;
-	}
-
-	.nav-link{
-		margin-right: 0.1rem;
-		padding: 0;
-		font-size: 1.1rem;
-	}
-}
-
-/* 480 to 560 */
-@media screen and (min-width: 30rem) and (max-width:35rem){
-	.main-nav{
-		width: 100vw;
 		display: inline-block;
-		padding: 0;
-		text-align: center;
 	}
 
-	.nav-logo {
-		margin-right: 12rem;
+	.nav-link-section {
+		/* order: 3; */
+		display: block;
+		text-align: center;
+		padding-top: 0.3rem;
 	}
-}
-/* 680px to 900px */
-@media screen and (min-width: 42.5rem) and (max-width: 56.25rem){
 
 	.nav-link {
-		padding-left: 2.5rem;
-	}
-	.nav-link-section {
-		padding: 0;
 		display: block;
+	}
+
+	.nav-link-section a {
+		display: none;
 	}
 }
 
-/* 900 to 1040 */
-@media screen and (min-width: 56.25rem) and (max-width: 65rem){
-		
+@media screen and (min-width: 60rem){
 	.mobile-nav {
 		display: none;
 	}
-	.nav-link-section {
-		padding: 1.1rem;
-	}
-}
-
-/* 900 to 960 */
-@media screen and (min-width:56.25rem) and (max-width:60rem){
-
-	.nav-link-section{
-		display: block;
-		/* padding: 1.1rem; */
-	}
-	.nav-link-section a {
-		display: block;
-	}
- .mobile-nav {
-	 display: block;
- }
 }

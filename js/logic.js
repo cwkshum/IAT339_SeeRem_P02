@@ -36,14 +36,9 @@ var nav = 0; // off as default
 
 function changeNav(){
   if(nav==0){
-    if($(window).width()<=560){
-
+    if($(window).width()<=960){
+      $('.nav-link-section').css("display", "block");
       $('.nav-link-section a').css("display", "block");
-      currentDisplay = "block";
-      nav=1;
-    } else if($(window).width()>=560){
-      $('.nav-link-section a').css("display", "inline");
-      currentDisplay = "inline";
       nav=1;
     }
 
@@ -63,11 +58,12 @@ $(window).resize(function(){
   });
 
 $(window).resize(function(){
-  console.log('resized');
+  if ($(window).width()<=960){
+  $('.mobile-nav').css("display", "inline-block");
   $('.nav-link-section a').css("display", "none");
-  nav = 0;
-
-  if ($(window).width()>=960){
+  nav=0;
+} else if ($(window).width()>=960){
+    $('.mobile-nav').css("display", "none");
     $('.nav-link-section a').css("display", "inline");
     nav=0;
   }
