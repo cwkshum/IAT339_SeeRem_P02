@@ -103,7 +103,7 @@ hr{
 /* MEDIA QUERIES */
 /* Screen size of 480px or less */
 @media screen and (max-width:30rem){
-	
+
 	.sub-header{
 		padding: 2.5rem 3.8rem;
 	}
@@ -134,7 +134,7 @@ hr{
 		margin-left: -1.5rem;
 	}
 
-	.subscription-one, .subscription-two, .subscription-three{	
+	.subscription-one, .subscription-two, .subscription-three{
 		padding: 1.8rem 1.5rem;
 		margin-left: 0;
 		margin-right: 0;
@@ -153,6 +153,11 @@ hr{
 	.contact-form{
 		margin-left: -0.3rem;
 		margin-right: 0.5rem;
+	}
+
+	.contact-sales-container {
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	/* change size of text input field */
@@ -176,7 +181,7 @@ hr{
 
 /* Screen size of 480px - 800px */
 @media screen and (min-width:30rem) and (max-width: 50rem){
-	
+
 	.sub-header{
 		padding: 3rem 3.8rem;
 	}
@@ -307,7 +312,7 @@ hr{
 
 /* Screen size of 896px - 1088px */
 @media screen and (min-width: 56rem) and (max-width: 68rem){
-	
+
 	.container{
 		flex-direction: column;
 	}

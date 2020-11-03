@@ -88,7 +88,8 @@ textarea:focus{
 
 	.contact-form-container{
 		margin-top: 2rem;
-		margin-left: 1rem;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.contact-form{

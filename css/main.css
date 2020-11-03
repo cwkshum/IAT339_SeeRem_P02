@@ -408,6 +408,8 @@ footer li{
 /* MEDIA QUERIES */
 
 @media screen and (max-width:20rem){
+
+
 	.main-nav, .mobile-nav, .nav-link-section {
 		display: block;
 		text-align: center;
