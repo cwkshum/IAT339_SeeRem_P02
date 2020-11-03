@@ -56,7 +56,7 @@ a:hover, .intext-link:hover, .intext-link:focus{
 /* Logo in Navigation */
 .nav-logo img{
 	width: 12rem;
-	padding: 0;
+	padding: 1rem;
 }
 
 .nav-logo{
@@ -366,7 +366,7 @@ footer li{
 }
 
 .mobile-nav {
-	padding-top: 0;
+	padding-top: 0.5rem;
   /* display: none; */
 }
 
@@ -409,7 +409,6 @@ footer li{
 
 @media screen and (max-width:20rem){
 
-
 	.main-nav, .mobile-nav, .nav-link-section {
 		display: block;
 		text-align: center;
@@ -419,6 +418,12 @@ footer li{
 	}
 }
 
+/* at exactly 320px */
+@media screen and (width:20rem){
+	.nav-logo {
+		margin-left: -2rem;
+	}
+}
 
 /* 320PX TO 480PX */
 @media screen and (min-width:20rem) and (max-width:30rem){
@@ -453,7 +458,7 @@ footer li{
 
 	.mobile-nav {
 		flex: 1;
-		right: 0;
+		/* right: 0; */
 		/* order: 2; */
 		font-size: 1rem;
 		position: absolute;
@@ -484,6 +489,18 @@ footer li{
 		width: 2rem;
 		margin-right: 0.5rem;
 		padding: 0.1rem;
+	}
+}
+
+/* 304px to 384px */
+@media screen and (min-width:19rem) and (max-width:24rem){
+
+	.nav-logo img {
+		padding-left: 0;
+	}
+
+	.mobile-nav {
+		right: 1rem;
 	}
 }
 
@@ -546,6 +563,10 @@ footer li{
 	.footer-social img{
 		width: 20%;
 		margin-right: 0.5rem;
+	}
+
+	#scrollUpbtn {
+		right: 0.2rem;
 	}
 }
 
