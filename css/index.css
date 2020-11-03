@@ -88,10 +88,13 @@
   flex: 1;
   order: 1;
   padding-left: 2rem;
-  /*margin-right: -2rem;*/
 }
 
-.seeda-features-container p {
+.seeda-benefits-container li{
+  margin-top: 0.8rem;
+}
+
+.seeda-features-container p{
   max-width: 100%;
 }
 
