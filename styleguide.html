@@ -3,26 +3,40 @@
 
 	<head>
     	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>Seeda's SeeRem Style Guide</title>
-    	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
-    	<link href="css/styleguide.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Website Tab Title -->
+		<title>Style Guide | SeeRem</title>
+
+		<!-- Website Tab Icon -->
+		<link rel="icon" href="img/sq_logo.png" type="image/png">
+
+		<!-- Linked Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
+
+		<!-- Linked Style Sheets -->
+		<link href="css/main.css" rel="stylesheet">
+		<link href="css/styleguide.css" rel="stylesheet">
+
+		<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  	<script src="js/logic.js"></script>
   	</head>
 
   	<body>
   		<div id="container">
   			<div class="box1">
-	      		<h1>Seeda's SeeRem Style Guide</h1>
+	      		<h1>SeeRem Style Guide</h1>
 	      		<nav>
 	      			<a href="#interactive" class="page-nav">Interactive Elements</a>
 	      			<a href="#textstyling" class="page-nav">Text Styling</a>
 	      			<a href="#combinedelements" class="page-nav">Combined Elements</a>
 	      			<a href="#brandingideas" class="page-nav">Branding Ideas</a>
 	      			<a href="#brandcomponents" class="page-nav">Brand Components</a>
-	      			<a href="#citations" class="page-nav">Citations</a>
+	      			<!-- <a href="#citations" class="page-nav">Citations</a>
 	      			<a href="services.html" target="_blank" class="page-nav">Service Listing Page Template</a>
-	      			<a href="checkout.html" target="_blank" class="page-nav">Checkout Page Template</a>
+	      			<a href="checkout.html" target="_blank" class="page-nav">Checkout Page Template</a> -->
 	      		</nav>
 			</div>
 
@@ -39,7 +53,7 @@
 			        	<code>&lt;a href="https://sites.google.com/seeda.ca/seerem/home" class="intext-link"&gt;View Details&lt;/a&gt;</code>
 			        	<h4>Rendered Example</h4>
 			        	<a href="https://sites.google.com/seeda.ca/seerem/home" class="intext-link">View Details</a><br>
-
+			        	
 			      	</section>
 
 			      	<section class="element">
@@ -50,7 +64,7 @@
 			        	<code>&lt;nav&gt;&lt;a href="index.html" class="nav-link"&gt;Home&lt;/a&gt;&lt;/nav&gt;</code>
 			        	<h4>Rendered Element</h4>
 			        	<nav>
-			  				<a href="index.html" class="nav-link">Home</a>
+			  				<a href="index.html" class="nav-link">Home</a> 
 						</nav>
 			      	</section>
 
@@ -75,8 +89,10 @@
 			        	<code>&lt;form&gt;&lt;input class="text-input" type="text" id="firstname" name="firstname"&gt;&lt;/form&gt;</code>
 			        	<h4>Rendered Element</h4>
 			        	<form>
-			  				<label for="firstname" class="form-label">First Name</label><br>
-			  				<input type="text" class="text-input" id="firstname" name="firstname">
+			        		<div class="solo form-section">
+				  				<label for="firstname" class="form-label">First Name</label><br>
+				  				<input type="text" class="text-input" id="firstname" name="firstname">
+			  				</div>
 						</form>
 			      	</section>
 
@@ -127,7 +143,7 @@
 			        	<h4>Heading Level 3</h4>
 			        	<h5>Heading Level 4</h5>
 			     	</section>
-
+			      	
 			      	<section class="element">
 			        	<h3>Paragraph</h3>
 			        	<h4>CSS Selector</h4>
@@ -148,8 +164,8 @@
 			        	<ol>
 			  				<li>Energy</li>
 			  				<li>Construction</li>
-			  				<li>Agricultural</li>
-			  				<li>Governemnt</li>
+			  				<li>Agricultural</li> 
+			  				<li>Governemnt</li> 
 						</ol>
 			     	</section>
 			    </section>
@@ -161,15 +177,18 @@
 			      	<section class="element">
 			        	<h3>Main Navigation</h3>
 			        	<nav class="main-nav">
-		    				<div class="nav-logo">
-	  							<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
-		        			</div>
-		       				<div class="nav-link-section">
-			        			<a href="index.html" class="nav-link">Home</a>
-			        			<a href="services.html" class="nav-link">Services</a>
-			       				<a href="index.html" class="nav-link">Contact</a>
-		       				</div>
-		    			</nav>
+							<div class="nav-logo">
+								<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
+							</div>
+							<div class="mobile-nav">
+								<p class="btn" onclick="changeNav()">MENU</p>
+							</div>
+							<div class="nav-link-section">
+								<a href="index.html" class="nav-link">Home</a>
+								<a href="#services" class="nav-link">Services</a>
+								<a href="contact.html" class="nav-link">Contact</a>
+							</div>
+						</nav>
 			      	</section>
 
 			      	<section class="element">
@@ -184,9 +203,54 @@
 			      	</section>
 
 			      	<section class="element">
-			        	<h3>Payment Form</h3>
-			        	<form class="payment-form">
-			        		<!-- Personal Information -->
+			        	<h3>Contact Form</h3>
+			        	<div class="contact-sales-container">
+					       	<h4>Contact Sales</h4>
+					    	<!-- Create Account Form -->
+					        <form class="contact-form">
+						        <!-- First Name Input Box -->
+						        <div class="form-section">
+							  		<label class="form-label" for="firstname">First Name</label><br>
+							  		<input class="text-input" type="text" id="firstname" name="firstname" placeholder="First" required>
+							  	</div>
+						        <!-- Last Name Input Box -->
+							  	<div class="form-section">
+								  	<label class="form-label" for="lastname">Last Name</label><br>
+								  	<input class="text-input" type="text" id="lastname" name="lastname" placeholder="Last" required>
+							  	</div>
+						        <!-- Email Address Input Box -->
+							  	<div class="form-section">
+							  		<label class="form-label" for="email">Email Address</label><br>
+						  			<input class="text-input" type="email" id="email" name="email" placeholder="email@gmail.com" required>
+					  			</div>
+						        <!-- Phone Number Input Box -->
+					  			<div class="form-section">
+						  			<label class="form-label" for="phone">Phone Number</label><br>
+					  				<input class="text-input" type="text" id="phone" name="phone" placeholder="012-345-6789">
+						  		</div>
+						  		<!-- Subscription Plan Selection -->
+						  		<div class="form-section">
+				  					<p class="form-label">Subscription Plan</p>
+						  			<label class="radio-btn form-label">Trial
+				 						<input type="radio" name="radio" checked>
+				  						<span class="radio-select" id="trialRad"></span>
+									</label>
+									<label class="radio-btn form-label">Monthly
+					 					<input type="radio" id="monthlyRad" name="radio">
+					  					<span class="radio-select"></span>
+									</label>
+									<label class="radio-btn form-label">Annual
+					 					<input type="radio" id="annualRad" name="radio">
+					  					<span class="radio-select"></span>
+									</label>
+						  		</div>
+							  	<!-- Contact Sales Submit Button -->
+						  		<div class="contact-sales">
+						  			<input class="action-btn" type="submit" value="Submit">
+						  		</div>
+						  	</form>
+						</div>
+			        	<!-- <form class="payment-form">
 			        		<div class="form-section">
 				  				<label class="form-label" for="firstname2">First Name</label><br>
 				  				<input class="text-input" type="text" id="firstname2" name="firstname2" placeholder="First">
@@ -203,33 +267,6 @@
 			  					<label class="form-label" for="phone">Phone Number</label><br>
 			  					<input class="text-input" type="text" id="phone" name="phone" placeholder="012-345-6789">
 			  				</div>
-			  				<!-- Company Information -->
-			  				<div class="form-section">
-			  					<label class="form-label" for="company">Company Name</label><br>
-			  					<input class="text-input" type="text" id="company" name="company" placeholder="Company">
-		  					</div>
-		  					<div class="form-section">
-			  					<label class="form-label" for="industry">Company Industry</label><br>
-			  					<input class="text-input" type="text" id="industry" name="industry" placeholder="Industry">
-		  					</div>
-			  				<div class="form-section">
-		  						<label class="form-label" for="country">Country</label><br>
-		  						<input class="text-input" type="text" id="country" name="country" placeholder="Country">
-		  					</div>
-		  					<!-- Card Information -->
-		  					<div class="form-section">
-		  						<label class="form-label" for="cardnumber">Card Number</label><br>
-		  						<input class="text-input" type="text" id="cardnumber" name="cardnumber" placeholder="0123 4567 8901 2345">
-		  					</div>
-		  					<div class="form-section">
-		  						<label class="form-label" for="expdate">Exp Date (MM/YY)</label><br>
-		  						<input class="text-input" type="text" id="expdate" name="expdate" placeholder="01/22"><br>
-		  					</div>
-		  					<div class="form-section">
-		  						<label class="form-label" for="securitycode">Security Code</label><br>
-		  						<input class="text-input" type="text" id="securitycode" name="securitycode" placeholder="012">
-		  					</div>
-		  					<!-- Company Size -->
 		  					<div class="form-section">
 		  						<p class="form-label">Company Size</p>
 				  				<label class="radio-btn form-label">Less than 500 people
@@ -241,29 +278,18 @@
 			  						<span class="radio-select"></span>
 								</label>
 				  			</div>
-				  			<!-- Checkout Button -->
 			  				<div class="confirm-checkout">
 			  					<input class="checkout-btn" type="submit" value="Confirm Checkout">
 			  				</div>
-						</form>
+						</form> -->
 			      	</section>
 
 			      	<section>
-			        	<h3>Checkout Cart</h3>
-			        	<div class="cart">
-		        			<!-- Top Section Containing Items -->
-				        	<div class="grid gutters two-column cart-top">
-				        		<h4>SeeRem Free Trial</h4>
-				        		<p>$00.00</p>
-				        		<h4>SeeRem One Year Subscription Plan</h4>
-				        		<p>$30.00</p>
-				        	</div>
-				        	<!-- Bottom Section Containing Total Price -->
-				        	<div class="grid gutters two-column cart-bottom">
-				        		<h4>Total:</h4>
-				        		<p>$30.00</p>
-			        		</div>
-		        		</div>
+			        	<h3>Confirmation Message</h3>
+			        	<div class="confirmation-container">
+							<h4>Contact Confirmation</h4>
+							<p>Thank you for reaching out to us! Your message has been received and will be reviewed by one of our dedicated team members. We will reach out shortly to respond to your inquiry; if you do not receive a response within 72 hours or your message needs urgent attention, please contact us by phone at +1 (403) 966 9848.
+						</div>
 			      	</section>
 			    </section>
 
@@ -273,17 +299,17 @@
 			    	<h2 class="subheading">Branding Ideas</h2>
 
 			      	<section class="element">
-			        	<h3>What Does Seeda Do?</h3>
+			        	<h3>What Does SeeRem Do?</h3>
 			        	<p>Seeda offers assistance to clients by providing methods on ways to cut down the overall environmental footprint of their projects. They offer engineering consulting as well as technical services by providing studies, reports, project planning, project management, along with environmental submissions and compliance support. Seeda has many projects with one of their divisions being SeeRem, an application that allows connection between people and devices in order to boost the efficiency of professional workers.</p>
 			      	</section>
 
 			      	<section class="element">
-			        	<h3>Who is Seeda to Potential Customers?</h3>
+			        	<h3>Who is SeeRem to Potential Customers?</h3>
 			        	<p>Seeda offers a service to companies by helping them develop successful projects with a reduced environmental footprint. Their application, SeeRem, is a resource that is aimed towards companies in the energy, construction, agricultural, and government industries. SeeRem is developed to improve the productivity of the company by connecting staff to the work sites in a fast and convenient way. The application has the ability of locating devices, classifying users, and making connections through channels that are approved by the company.</p>
 			      	</section>
 
 			      	<section>
-			        	<h3>Why Might Seeda Entice Someone to Purchase a Service?</h3>
+			        	<h3>Why Might SeeRem Entice Someone to Purchase a Service?</h3>
 			        	<p>Seeda provides clients with knowledgeable professionals to guide them in completing successful projects. The company’s SeeRem division would be a beneficial application for energy, construction, agricultural, and government industries as it provides a digital method of connecting the company’s personnel to the work sites in an efficient manner. Their staff will be able to locate devices, identify the users, and connect to them through channels approved by the company. This application also supports connections in various different areas</p>
 			      	</section>
 			    </section>
@@ -308,7 +334,7 @@
 
 			      	<section>
 			        	<h3>Potential Imagery and Art Direction</h3>
-			        	<div class="grid row-gap image-gallery">
+			        	<div class="image-gallery">
 							<figure>
 			  					<img src="img/seeremlogo1.png" alt="SeeRem Logo 1">
 			  					<figcaption>Seeda's SeeRem Logo Version 1</figcaption>
@@ -342,16 +368,50 @@
 			  					<figcaption>Website Inspiration provided by Seeda. From Riipen, <a href="https://www.riipen.com" target="_blank">https://www.riipen.com</a>.</figcaption>
 							</figure>
 						</div>
+			        	<!-- <div class="grid row-gap image-gallery">
+							<figure>
+			  					<img src="img/seeremlogo1.png" alt="SeeRem Logo 1">
+			  					<figcaption>Seeda's SeeRem Logo Version 1</figcaption>
+							</figure>
+							<figure>
+			  					<img src="img/seeremlogo2.png" alt="SeeRem Logo 2">
+			  					<figcaption>Seeda's SeeRem Logo Version 2</figcaption>
+							</figure>
+				        	<figure>
+			  					<img src="img/energy.jpg" alt="Energy Industry">
+			  					<figcaption>Energy Industry. From Unsplash, by Luca Bravo, 2016, <a href="https://unsplash.com/photos/YoelVcKWmws" target="_blank">https://unsplash.com/photos/YoelVcKWmws</a>.</figcaption>
+							</figure>
+							<figure>
+			  					<img src="img/construction.jpg" alt="Construction Industry">
+			  					<figcaption>Construction Industry. From Unsplash, by Scott Blake, 2018, <a href="https://unsplash.com/photos/x-ghf9LjrVg" target="_blank">https://unsplash.com/photos/x-ghf9LjrVg</a>.</figcaption>
+							</figure>
+							<figure>
+			  					<img src="img/register.jpg" alt="Person on Computer">
+			  					<figcaption>Person on Computer. From Unsplash, by Kaitlyn Baker, 2017, <a href="https://unsplash.com/photos/vZJdYl5JVXY" target="_blank">https://unsplash.com/photos/vZJdYl5JVXY</a>.</figcaption>
+							</figure>
+							<figure>
+			  					<img src="img/download.jpg" alt="Construction Site">
+			  					<figcaption>Construction Site. From Unsplash, by Guillaume Techer, 2018, <a href="https://unsplash.com/photos/XvNPUh6fWVk" target="_blank">https://unsplash.com/photos/XvNPUh6fWVk</a>.</figcaption>
+							</figure>
+							<figure>
+			  					<img src="img/inspiration1.png" alt="Website Inspiration 1">
+			  					<figcaption>Website Inspiration provided by Seeda. From Sredio, <a href="https://www.sred.io" target="_blank">https://www.sred.io</a>.</figcaption>
+							</figure>
+							<figure>
+			  					<img src="img/inspiration2.png" alt="Website Inspiration 2">
+			  					<figcaption>Website Inspiration provided by Seeda. From Riipen, <a href="https://www.riipen.com" target="_blank">https://www.riipen.com</a>.</figcaption>
+							</figure>
+						</div> -->
 			      	</section>
 			    </section>
-
+		      	
 			    <!-- CITATIONS SECTION -->
 				<section id="citations">
 				    <h2 class="subheading">Citations</h2>
 
 				    <section>
 				    	<h3>Sources Used</h3>
-				        <ol>
+				        <!-- <ol>
 				        	<li>Baker, K. (2017). Person on computer. [Photograph]. Retrieved from <a href="https://unsplash.com/photos/vZJdYl5JVXY" target="_blank">https://unsplash.com/photos/vZJdYl5JVXY</a></li>
 				        	<li>Blake, S. (2018). Construction site. [Photograph]. Retrieved from <a href="https://unsplash.com/photos/x-ghf9LjrVg" target="_blank">https://unsplash.com/photos/x-ghf9LjrVg</a></li>
 				        	<li>Bravo, L. (2016). Energy windmills. [Photograph]. Retrieved from <a href="https://unsplash.com/photos/YoelVcKWmws" target="_blank">https://unsplash.com/photos/YoelVcKWmws</a></li>
@@ -365,10 +425,52 @@
 				        	<li>W3Schools. (2020). How to create a custom checkbox. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_custom_checkbox.asp" target="_blank">https://www.w3schools.com/howto/howto_css_custom_checkbox.asp</a></li>
 				        	<li>W3Schools. (2020). HTML input types. Retrieved from <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">https://www.w3schools.com/html/html_form_input_types.asp</a></li>
 				        	<li>W3Schools. (2020). Transition on hover. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_transition_hover.asp" target="_blank">https://www.w3schools.com/howto/howto_css_transition_hover.asp</a></li>
-				        </ol>
+				        </ol> -->
 				    </section>
 				</section>
-			</div>
+			</div>	
 		</div>
+
+		<!-- Scroll to top button -->
+		<div id="scrollUpbtn" onclick="toTop()">TOP</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="footer-navigation">
+				<!-- Site Navigation Section -->
+				<h4>Navigation</h4>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#services">Services</a></li>
+					<li><a href="subscription.html">Subscription</a></li>
+				</ul>
+				<ul>
+					<li><a href="account.html">Account</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="https://www.seeda.ca/home" target="_blank">Seeda</a></li>
+				</ul>
+				<ul>
+					<li><a href="citations.html" target="_blank">Citations</a></li>
+					<li><a href="styleguide.html" target="_blank">Style Guide</a></li>
+					<li><a href="https://github.com/cwkshum/IAT339_SeeRem_P02" target="_blank">GitHub</a></li>
+				</ul>
+			</div>
+			<div class="footer-contact">
+				<!-- Contact Information Section -->
+				<h4>Contact</h4>
+				<ul>
+					<li>Location: Suite 2000, 125 9 Avenue SE, Calgary, AB, T2G 0P6</li>
+					<li>Email Address: support@seerem.com</li>
+					<li>Phone: +1 (403) 966 9848</li>
+				</ul>
+			</div>
+			<div class="footer-social">
+				<!-- Social Media Section -->
+				<h4>Social Media</h4>
+				<a href="https://twitter.com/SeedaInc" target="_blank"><img src="img/twitter.png" alt="Twitter Logo"></a>
+				<a href="https://www.facebook.com/seeda.ca/?ref=aymt_homepage_panel" target="_blank"><img src="img/facebook.png" alt="Facebook Logo"></a>
+				<a href="https://www.linkedin.com/company/seeda.ca" target="_blank"><img src="img/linkedin.png" alt="LinkedIn Logo"></a>
+			</div>
+		</footer>
   	</body>
 </html>
