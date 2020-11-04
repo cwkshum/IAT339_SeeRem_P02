@@ -84,6 +84,19 @@ a:hover, .intext-link:hover, .intext-link:focus{
 	border-bottom: 1px solid #3C3C3C;
 }
 
+/* Mobile Navigation Styling */
+.mobile-nav {
+	padding-top: 0.5rem;
+  /* display: none; */
+}
+
+.mobile-nav .btn {
+	display: inline-block;
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+}
+
+/* Header Styling */
 header{
 	background: #AE3034;
 	margin-top: 0;
@@ -98,7 +111,6 @@ header{
   	padding: 9rem 3.8rem;
 }
 
-/* Header Styling */
 .sub-header{
 	margin-bottom: 1.5rem;
 	padding: 6rem 3.8rem;
@@ -121,6 +133,7 @@ header h1{
 	text-shadow: 0.3rem 0.3rem 2rem #000000;
 }
 
+/* Content Container Styling */
 .container{
 	display: flex;
 	flex-direction: row;
@@ -137,12 +150,25 @@ header h1{
 	padding-left: 1rem;
 }
 
-/* FORM STYLING */
+/* Form Styling */
 .contact-form{
 	background: #ffffff;
 	margin-top: -1.5rem;
 	padding-left: 2rem;
 	padding-bottom: 1.2rem;
+}
+
+.contact-form-container, .account-form-container, .contact-sales-container {
+	flex: 1;
+	padding: 2rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-bottom: 3rem;
+	background: #ffffff;
+}
+
+.contact-form-container h2, .account-form-container h2, .contact-sales-container h2 {
+	margin-left: 0.8rem;
 }
 
 .form-section{
@@ -153,21 +179,45 @@ header h1{
 	display: inline-block;
 }
 
-/* Changing Form Label Colour*/
-.form-label{
-	color: #3C3C3C;
-}
-
 .form-section p{
 	margin-top: 0.2rem;
 }
 
-/* Learn More Button Styling */
+.form-label{
+	color: #3C3C3C;
+}
+
 .learn-more{
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
+/* Styling Text Input Box */
+.text-input{
+	padding: 0.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.7rem;
+	border: 1px solid #3C3C3C;
+	border-radius: 0.4rem;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.5s;
+}
+
+.text-input:hover{
+	background: #ECDEDE;
+}
+
+.text-input:focus{
+	border: 1px solid #AE3034;
+	background: #F5F5F5;
+}
+
+/* Change Size of Text Input Field */
+input[type = "text"], input[type="email"]{
+  width: 20rem;
+}
+
+/* General Button Styling */
 .btn{
   padding: 1rem 1rem;
   margin-right: 0.5rem;
@@ -254,34 +304,79 @@ header h1{
 	background: #954749;
 }
 
-/* Styling Text Input Box */
-.text-input{
-	padding: 0.5rem;
-	margin-top: 0.5rem;
-	margin-bottom: 0.7rem;
-	border: 1px solid #3C3C3C;
-	border-radius: 0.4rem;
+
+/* Submit Button Styling */
+.contact-seeda, .create-account, .contact-sales {
+	margin-left: -1rem;
+	margin-top: 3rem;
+}
+
+.action-btn{
+	padding: 0.8rem 3rem;
+	margin-right: 0.5rem;
+	border-radius: 10px;
+	border: 2px solid #954749;
+	background: #954749;
+	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
-.text-input:hover{
-	background: #ECDEDE;
+.action-btn:hover{
+	border: 2px solid #954749;
+	background: #ffffff;
+	color: #954749;
 }
 
-.text-input:focus{
-	border: 1px solid #AE3034;
+.action-btn:focus{
+	border: 2px solid #3C3C3C;
 	background: #F5F5F5;
+	color: #3C3C3C;
 }
 
-/* Change Size of Text Input Field */
-input[type = "text"], input[type="email"]{
-    width: 20rem;
+/* Styling for all Confirmation Containers */
+.confirmation-container h2, .confirmation-container p {
+	margin-left:0.8rem;
+	max-width: 100%;
 }
 
+.confirmation-container{
+	flex: 1;
+	padding: 2rem;
+	margin: 1rem 1rem;
+	background: #ffffff;
+}
 
+.confirmation-container {
+  display: none;
+}
 
+#scrollUpbtn {
+	display: none;
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	padding: 0.7rem 1rem;
+	margin-right: 0.5rem;
+	border-radius: 10px;
+	border: 2px solid #954749;
+	background: #954749;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.3s;
+}
 
+#scrollUpbtn:hover {
+	border: 2px solid #954749;
+	background: #ffffff;
+	color: #954749;
+}
+
+#scrollUpbtn:focus {
+	border: 2px solid #3C3C3C;
+	background: #F5F5F5;
+	color: #3C3C3C;
+}
 
 /* Footer Styling */
 footer{
@@ -346,93 +441,17 @@ footer li{
 	margin-right: 0.5rem;
 }
 
-/* Styling for all Confirmation Containers */
-.confirmation-container h2, .confirmation-container p {
-	margin-left:0.8rem;
-	max-width: 100%;
-}
 
-.confirmation-container{
-	flex: 1;
-	padding: 2rem;
-	margin: 1rem 1rem;
-	background: #ffffff;
-}
 
-.confirmation-container {
-  display: none;
-}
 
-.mobile-nav {
-	padding-top: 0.5rem;
-  /* display: none; */
-}
-
-.mobile-nav .btn {
-	display: inline-block;
-	margin: 0.5rem 0;
-	padding: 0.5rem;
-}
-
-#scrollUpbtn {
-	display: none;
-	position: fixed;
-	bottom: 2rem;
-	right: 2rem;
-	padding: 0.7rem 1rem;
-	margin-right: 0.5rem;
-	border-radius: 10px;
-	border: 2px solid #954749;
-	background: #954749;
-	color: #ffffff;
-	font-family: 'Open Sans', sans-serif;
-	transition: 0.3s;
-}
-
-#scrollUpbtn:hover {
-	border: 2px solid #954749;
-	background: #ffffff;
-	color: #954749;
-}
-
-#scrollUpbtn:focus {
-	border: 2px solid #3C3C3C;
-	background: #F5F5F5;
-	color: #3C3C3C;
-}
 
 
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width:20rem){
-
-	.main-nav, .mobile-nav, .nav-link-section {
-		display: block;
-		text-align: center;
-	}
-	.nav-link-section a {
-		display: none;
-	}
-}
-
-/* at exactly 320px */
-@media screen and (width:20rem){
-	.nav-logo {
-		margin-left: -2rem;
-	}
-}
-
-@media screen and (max-width:30rem){
-	.confirmation-container {
-		margin-left: 0;
-		margin-right: 0;
-		padding: 0.65rem;
-	}
-}
-
-/* 320PX TO 480PX */
+/* Screen size of 320px - 480px */
 @media screen and (min-width:20rem) and (max-width:30rem){
+
 	body {
 		font-size: 0.75rem;
 	}
@@ -447,7 +466,6 @@ footer li{
 
 	.nav-logo {
 		flex: 2;
-		/* margin-right: 7rem; */
 	}
 
 	.nav-link-section {
@@ -464,8 +482,6 @@ footer li{
 
 	.mobile-nav {
 		flex: 1;
-		/* right: 0; */
-		/* order: 2; */
 		font-size: 1rem;
 		position: absolute;
 		right: 2.5rem;
@@ -498,19 +514,7 @@ footer li{
 	}
 }
 
-/* 304px to 384px */
-@media screen and (min-width:19rem) and (max-width:24rem){
-
-	.nav-logo img {
-		padding-left: 0;
-	}
-
-	.mobile-nav {
-		right: 1rem;
-	}
-}
-
-/* 480 to 1040 */
+/* Screen size of 480px - 1040px */
 @media screen and (min-width:30rem) and (max-width:65rem){
 
 	.nav-logo {
@@ -524,7 +528,6 @@ footer li{
 	}
 
 	.nav-link-section {
-		/* order: 2; */
 	}
 
 	.nav-link-section a {
@@ -535,7 +538,6 @@ footer li{
 		position: absolute;
 		right: 2.5rem;
 	  display: none;
-		/* order: 3; */
 	}
 
 	footer {
@@ -564,8 +566,9 @@ footer li{
 	}
 }
 
-/* 1040 to 1440 */
+/* Screen size of 1040px - 1440px */
 @media screen and (min-width:65rem) and (max-width:90rem){
+
 	.footer-social img{
 		width: 20%;
 		margin-right: 0.5rem;
@@ -576,21 +579,53 @@ footer li{
 	}
 }
 
-/* ADDITIONAL BREAKPOINTS FOR MOBILE NAV */
 
-/* below 960px */
+
+
+
+
+
+/* ADDITIONAL BREAKPOINTS FOR MOBILE NAV */
+/* Screen size below 320px */
+@media screen and (max-width:20rem){
+
+	.main-nav, .mobile-nav, .nav-link-section {
+		display: block;
+		text-align: center;
+	}
+	.nav-link-section a {
+		display: none;
+	}
+}
+
+/* At exactly 320px */
+@media screen and (width:20rem){
+
+	.nav-logo {
+		margin-left: -2rem;
+	}
+}
+
+/* Screen size of 304px - 384px */
+@media screen and (min-width:19rem) and (max-width:24rem){
+
+	.nav-logo img {
+		padding-left: 0;
+	}
+
+	.mobile-nav {
+		right: 1rem;
+	}
+}
+
+/* Screen size below 960px */
 @media screen and (max-width:60rem){
+
 	.main-nav {
 		display: block;
 	}
 	.nav-logo, .mobile-nav {
 		display: inline-block;
-
-		/* order: 2; */
-	}
-
-	.nav-logo{
-		/* padding-right: 60%; */
 	}
 
 	.mobile-nav {
@@ -598,7 +633,6 @@ footer li{
 	}
 
 	.nav-link-section {
-		/* order: 3; */
 		display: block;
 		text-align: center;
 		padding-top: 0.3rem;
@@ -613,8 +647,108 @@ footer li{
 	}
 }
 
+/* Screen size above 960px */
 @media screen and (min-width: 60rem){
+
 	.mobile-nav {
 		display: none;
+	}
+}
+
+
+
+
+
+
+/* ADDITIONAL MEDIA QUERIES FOR FORMS */
+
+/* Screen size below 480px */
+@media screen and (max-width:30rem){
+
+	.contact-form-container, .account-form-container, .contact-sales-container {
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0.5rem;
+	}
+
+	.form-section{
+		display: block;
+		margin-right: 1rem;
+		margin-bottom: -1.5rem;
+	}
+
+	.contact-form {
+		margin-left: -0.3rem;
+	}
+
+	.confirmation-container {
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0.65rem;
+	}
+}
+
+/* Screen size of 480px - 800px */
+@media screen and (min-width:30rem) and (max-width: 50rem){
+
+	.sub-header{
+		padding: 3rem 3.8rem;
+	}
+
+	.sub-header h1{
+		font-size: 1.6rem;
+	}
+
+  .container{
+		flex-direction: column;
+	}
+
+	p{
+		max-width: 100%;
+	}
+
+	.image-container{
+		margin: 0 auto;
+		margin-top: 2rem;
+		max-width: 75%;
+	}
+
+	.contact-sales-container, .contact-form-container, .account-form-container {
+		padding: 2rem;
+	}
+
+	.account-form, .contact-form {
+		margin-left: -0.2rem;
+		margin-right: 1rem;
+	}
+}
+
+/* Screen size of 480px - 896px */
+@media screen and (min-width: 30rem) and (max-width: 56rem){
+
+	.form-section{
+		display: block;
+		margin-right: 1.5rem;
+		margin-bottom: -1.5rem;
+	}
+
+}
+
+/* Screen size of 800px - 896px */
+@media screen and (min-width:50rem) and (max-width: 56rem){
+
+	.contact-form-container, .account-form-container, .contact-sales-container {
+		padding: 2rem;
+	}
+
+	.contact-form, .account-form{
+		margin-left: -0.2rem;
+		margin-right: 1rem;
+	}
+
+	.form-section{
+		display: block;
+		margin-right: 1.5rem;
+		margin-bottom: -1.5rem;
 	}
 }

@@ -3,28 +3,11 @@
 	flex: 1;
 	order: 2;
 	margin-top: 1.5rem;
-	/*margin-right: 4.5rem;*/
 	margin-right: 1rem;
 }
 
 .image-container img{
 	width: 100%;
-}
-
-/* Account Form Container */
-.account-form-container{
-	flex: 1;
-	padding: 2rem;
-	/*margin-left: 3rem;
-	margin-right: 4.5rem;*/
-	margin-left: 1rem;
-	margin-right: 1rem;
-	margin-bottom: 3rem;
-	background: #ffffff;
-}
-
-.account-form-container h2{
-	margin-left: 0.8rem;
 }
 
 /* Create Account form styling */
@@ -37,42 +20,18 @@
 
 /* Change Size of Text Input Field */
 input[type = "text"], input[type="email"]{
-    width: 20rem;
+  width: 20rem;
 }
 
 
-/* Submit Button Styling */
-.create-account{
-	margin-left: -1rem;
-	margin-top: 3rem;
-}
 
-.action-btn{
-	padding: 0.8rem 3rem;
-	margin-right: 0.5rem;
-	border-radius: 10px;
-	border: 2px solid #954749;
-	background: #954749;
-	color: #ffffff;
-	font-family: 'Open Sans', sans-serif;
-	transition: 0.3s;
-}
 
-.action-btn:hover{
-	border: 2px solid #954749;
-	background: #ffffff;
-	color: #954749;
-}
-
-.action-btn:focus{
-	border: 2px solid #3C3C3C;
-	background: #F5F5F5;
-	color: #3C3C3C;
-}
 
 
 /* MEDIA QUERIES */
+/* Screen size below 320px */
 @media screen and (max-width:20rem){
+
 	.sub-header{
 		padding: 2.5rem 3.8rem;
 	}
@@ -111,22 +70,13 @@ input[type = "text"], input[type="email"]{
 		margin-bottom: -1.5rem;
 	}
 
-	/* change size of text input field */
 	input[type = "text"], input[type="email"]{
-    	width: 80%;
-    }
+    width: 80%;
+  }
 
 	.action-btn {
 		padding-left: 1rem;
 		padding-right: 1rem;
-	}
-}
-
-@media screen and (max-width:30rem){
-	.account-form-container {
-		margin-left: 0;
-		margin-right: 0;
-		padding: 0.5rem;
 	}
 }
 
@@ -170,30 +120,13 @@ input[type = "text"], input[type="email"]{
 		margin-bottom: -1.5rem;
 	}
 
-	/* change size of text input field */
 	input[type = "text"], input[type="email"]{
-    	width: 100%;
-    }
+    width: 100%;
+  }
 }
 
 /* Screen size of 480px - 800px */
 @media screen and (min-width: 30rem) and (max-width: 50rem){
-
-	.sub-header{
-		padding: 3rem 3.8rem;
-	}
-
-	.sub-header h1{
-		font-size: 1.6rem;
-	}
-
-    .container{
-		flex-direction: column;
-	}
-
-	p{
-		max-width: 100%;
-	}
 
 	.image-container{
 		margin: 0 auto;
@@ -201,25 +134,9 @@ input[type = "text"], input[type="email"]{
 		max-width: 75%;
 	}
 
-	.account-form-container{
-		padding: 2rem;
-	}
-
-	.account-form{
-		margin-left: -0.2rem;
-		margin-right: 1rem;
-	}
-
-	.form-section{
-		display: block;
-		margin-right: 1.5rem;
-		margin-bottom: -1.5rem;
-	}
-
-	/* change size of text input field */
 	input[type = "text"], input[type="email"]{
-    	width: 100%;
-    }
+    width: 100%;
+  }
 
 	.confirmation-container{
 		margin: 2rem 1.5rem;
@@ -243,29 +160,9 @@ input[type = "text"], input[type="email"]{
 		max-width: 75%;
 	}
 
-	.account-form-container{
-		padding: 2rem;
-	}
-
-	.account-form{
-		margin-left: -0.2rem;
-		margin-right: 1rem;
-	}
-
-	.form-section{
-		display: block;
-		margin-right: 1.5rem;
-		margin-bottom: -1.5rem;
-	}
-
-	/* change size of text input field */
 	input[type = "text"], input[type="email"]{
-    	width: 100%;
-    }
-
-    /* .confirmation-container{
-		margin: 1.5rem 3.5rem;
-	} */
+  	width: 100%;
+  }
 }
 
 /* Screen size of 896px - 1088px */
@@ -295,11 +192,9 @@ input[type = "text"], input[type="email"]{
 		margin-right: 5rem;
 	}
 
-	/* change size of text input field */
 	input[type = "text"], input[type="email"]{
-    	/*width: 14rem;*/
-    	width: 100%;
-    }
+    width: 100%;
+  }
 }
 
 /* Screen size of 1088px - 1248px */
@@ -315,11 +210,9 @@ input[type = "text"], input[type="email"]{
 		margin-right: 10%;
 	}
 
-	/* change size of text input field */
 	input[type = "text"], input[type="email"]{
-    	/*width: 14rem;*/
-    	width: 100%;
-    }
+    width: 100%;
+  }
 }
 
 /* Screen size of 1248px - 1440px */
@@ -339,10 +232,8 @@ input[type = "text"], input[type="email"]{
 		margin-right: 10%;
 	}
 
-	/*change size of text input field */
 	input[type = "text"], input[type="email"]{
-    	/*width: 24rem;*/
-    	width: 100%;
+    width: 100%;
 	}
 }
 
@@ -363,14 +254,12 @@ input[type = "text"], input[type="email"]{
 		margin-right: 10%;
 	}
 
-	/*change size of text input field */
 	input[type = "text"], input[type="email"]{
-    	/*width: 28rem;*/
-    	width: 100%;
+    width: 100%;
 	}
 }
 
-/* Screen size of 1728 or more*/
+/* Screen size above 1728px */
 @media screen and (min-width: 108rem){
 
 	.account-form-container{
@@ -387,8 +276,7 @@ input[type = "text"], input[type="email"]{
 		margin-right: 10%;
 	}
 
-	/* change size of text input field */
 	input[type = "text"], input[type="email"]{
-    	width: 100%;
+    width: 100%;
 	}
 }

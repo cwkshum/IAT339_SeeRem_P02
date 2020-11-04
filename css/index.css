@@ -98,7 +98,11 @@
   max-width: 100%;
 }
 
-/* Screen size of 480px or less */
+
+
+
+/* MEDIA QUERIES */
+/* Screen size below 480px */
 @media screen and (max-width:30rem){
 
   .main-header{
@@ -159,7 +163,7 @@
   }
 }
 
-/* Screen size of 480px - 800px */
+/* Screen size of 480px -  800px */
 @media screen and (min-width:30rem) and (max-width: 50rem){
 
   .main-header{
@@ -224,7 +228,7 @@
   }
 }
 
-/* Screen size of 800px - 1088px */
+/* Screen size of 800px -  1088px */
 @media screen and (min-width: 50rem) and (max-width: 60rem){
 
   .main-header{

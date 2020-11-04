@@ -302,14 +302,14 @@ li{
 }
 
 /* Image Gallery Styling */
-/*.grid.row-gap{ 
-    grid-row-gap: 1.5rem; 
+/*.grid.row-gap{
+    grid-row-gap: 1.5rem;
 }
 
-.grid.image-gallery{ 
-    grid-template-columns: 1fr 1fr; 
+.grid.image-gallery{
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-auto-flow: row;  
+    grid-auto-flow: row;
     margin-left: 0;
     margin-right: 0;
     margin-left: -2rem;
@@ -319,7 +319,7 @@ li{
 	width: 90%;
 }*/
 
-.image-gallery{ 
+.image-gallery{
     display: flex;
     flex-direction: column;
 	flex-wrap: wrap;
