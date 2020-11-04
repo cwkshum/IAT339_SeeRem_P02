@@ -60,7 +60,7 @@
 		    <!-- Create Account Form -->
 			<div class="account-form-container">
 		       	<h2>Create Account</h2>
-		        <form class="account-form">
+		        <form class="account-form" name="Form" formaction="" onsubmit="return false">
 			        <!-- First Name Input Box -->
 			        <div class="form-section">
 				  		<label class="form-label" for="firstname">First Name</label><br>
@@ -83,7 +83,7 @@
 			  		</div>
 				  	<!-- Create Account Button -->
 			  		<div class="create-account">
-			  			<input onclick="showConfirmation()" class="action-btn" type="submit" value="Create Account">
+			  			<input onclick="validateForm('account')" class="action-btn" type="submit" value="Create Account">
 			  		</div>
 				</form>
 			</div>

@@ -122,6 +122,14 @@ input[type = "text"], input[type="email"]{
 	}
 }
 
+@media screen and (max-width:30rem){
+	.account-form-container {
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0.5rem;
+	}
+}
+
 /* Screen size of 320px - 480px */
 @media screen and (min-width:20rem) and (max-width:30rem){
 
@@ -255,9 +263,9 @@ input[type = "text"], input[type="email"]{
     	width: 100%;
     }
 
-    .confirmation-container{
+    /* .confirmation-container{
 		margin: 1.5rem 3.5rem;
-	}
+	} */
 }
 
 /* Screen size of 896px - 1088px */

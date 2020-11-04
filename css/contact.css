@@ -90,6 +90,7 @@ textarea:focus{
 		margin-top: 2rem;
 		margin-left: 0;
 		margin-right: 0;
+		padding: 0.5rem;
 	}
 
 	.contact-form{

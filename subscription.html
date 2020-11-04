@@ -108,7 +108,7 @@
 			<div class="contact-sales-container">
 		       	<h2>Contact Sales</h2>
 		    	<!-- Create Account Form -->
-		        <form class="contact-form">
+		        <form class="contact-form" name="Form" formaction="" onsubmit="return false">
 			        <!-- First Name Input Box -->
 			        <div class="form-section">
 				  		<label class="form-label" for="firstname">First Name</label><br>
@@ -147,7 +147,7 @@
 			  		</div>
 				  	<!-- Contact Sales Submit Button -->
 			  		<div class="contact-sales">
-			  			<input class="action-btn" type="submit" value="Submit" onclick="scrollFunction('confirm')">
+			  			<input class="action-btn" type="submit" value="Submit" onclick="validateForm('subscription')">
 			  		</div>
 				</form>
 			</div>

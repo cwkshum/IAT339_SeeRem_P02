@@ -355,9 +355,7 @@ footer li{
 .confirmation-container{
 	flex: 1;
 	padding: 2rem;
-	margin-left: 3rem;
-	margin-right: 4.5rem;
-	margin-bottom: 3rem;
+	margin: 1rem 1rem;
 	background: #ffffff;
 }
 
@@ -422,6 +420,14 @@ footer li{
 @media screen and (width:20rem){
 	.nav-logo {
 		margin-left: -2rem;
+	}
+}
+
+@media screen and (max-width:30rem){
+	.confirmation-container {
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0.65rem;
 	}
 }
 
