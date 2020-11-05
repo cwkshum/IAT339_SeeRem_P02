@@ -301,7 +301,7 @@ input[type = "text"], input[type="email"]{
 
 
 /* Submit Button Styling */
-.contact-seeda, .create-account, .contact-sales {
+.action-btn-container {
 	margin-left: -1rem;
 	margin-top: 3rem;
 }
