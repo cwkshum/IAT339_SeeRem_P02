@@ -123,6 +123,12 @@ hr{
 /* 480px - 800px */
 @media screen and (min-width:30rem) and (max-width: 50rem){
 
+	.image-container{
+		margin: 0 auto;
+		margin-top: 2rem;
+		max-width: 75%;
+	}
+	
 	.subscription-container {
 		flex-direction: column;
 	}
