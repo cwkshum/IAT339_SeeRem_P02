@@ -106,10 +106,6 @@ hr{
 		margin-right: 0.5rem;
 	}
 
-	input[type = "text"], input[type="email"]{
-    width: 100%;
-  }
-
   .form-section p{
 		margin-bottom: 0;
 	}
@@ -139,15 +135,11 @@ hr{
 		margin-left: 2%;
 	}
 
-	input[type = "text"], input[type="email"]{
-    width: 100%;
-  }
-
-  .form-section p{
+  	.form-section p{
 		margin-bottom: 0;
 	}
 
-  .radio-btn {
+  	.radio-btn {
 	 	display: block;
 	 	margin-top: 0.3rem;
 	}
@@ -182,15 +174,11 @@ hr{
 		margin-left: 12%;
 	}
 
-	input[type = "text"], input[type="email"]{
-    width: 100%;
-  }
-
-  .form-section p{
+  	.form-section p{
 		margin-bottom: 0;
 	}
 
-  .radio-btn {
+  	.radio-btn {
 	 	display: block;
 	 	margin-top: 0.4rem;
 	}
@@ -235,14 +223,10 @@ hr{
 		margin-left: -0.2rem;
 	}
 
-	input[type = "text"], input[type="email"]{
-  	width: 100%;
-  }
-
-  .radio-btn {
-  	display: block;
+  	.radio-btn {
+  		display: block;
 	 	padding-left: 1.5rem;
-	  margin-top: 0.5rem;
+	  	margin-top: 0.5rem;
 	}
 }
 
@@ -262,10 +246,6 @@ hr{
 	.radio-btn{
 		margin-right: 2rem;
 	}
-
-	input[type = "text"], input[type="email"]{
-    width: 100%;
-  }
 }
 
 /* Screen size of 1248px - 1440px */
@@ -283,10 +263,6 @@ hr{
 
 	.contact-form{
 		margin-left: -0.2rem;
-	}
-
-	input[type = "text"], input[type="email"]{
-    width: 100%;
 	}
 }
 
@@ -307,9 +283,6 @@ hr{
 		margin-left: -0.2rem;
 	}
 
-	input[type = "text"], input[type="email"]{
-    width: 100%;
-	}
 }
 
 /* Screen size of 1728 or more*/
@@ -327,9 +300,5 @@ hr{
 
 	.contact-form{
 		margin-left: -0.2rem;
-	}
-
-	input[type = "text"], input[type="email"]{
-    	width: 100%;
 	}
 }
