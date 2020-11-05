@@ -23,15 +23,6 @@
 /* MEDIA QUERIES */
 /* Screen size below 320px */
 @media screen and (max-width:20rem){
-
-	.sub-header{
-		padding: 2.5rem 3.8rem;
-	}
-
-	.sub-header h1{
-		font-size: 1.4rem;
-	}
-
 	.container {
 		flex-direction: column;
 	}
@@ -47,7 +38,6 @@
 	}
 
 	.form-container {
-		margin-top: 3rem;
 		margin-left: 0;
 	}
 
@@ -95,10 +85,6 @@
 		margin: 0 auto;
 		margin-top: 2rem;
 		max-width: 70%;
-	}
-
-	.form-container {
-		margin-top: 3rem;
 	}
 
 	.account-form{

@@ -93,6 +93,10 @@
   margin-right: 1rem;
 }
 
+#services.container{
+  margin-top: -1.5rem;
+}
+
 /* Container for Service Listings */
 .service-listing-container{
   display: flex;
@@ -162,9 +166,10 @@
     margin-top: 1rem;
   }
 
-  .seeda-features-container {
+  .seeda-features-container{
     order: 1;
     padding-left: 1rem;
+    margin-top: -3rem;
   }
 
   .features.image-container{
@@ -175,11 +180,16 @@
 
   .seeda-benefits-container {
     padding-left: 1rem;
+    margin-top: -3rem;
   }
 
   .benefits.image-container{
     margin: 0 auto;
     max-width: 90%;
+  }
+
+  #services.container{
+    margin-top: -3rem;
   }
 }
 

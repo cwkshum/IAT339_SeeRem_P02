@@ -158,7 +158,6 @@ figcaption{
 /* MEDIA QUERIES */
 /* Screen size of 480px or less */
 @media screen and (max-width:30rem){
-body{background: pink;}
 	#container{
 		flex-direction: column;
 	}
