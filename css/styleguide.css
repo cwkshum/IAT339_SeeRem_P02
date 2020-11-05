@@ -110,6 +110,12 @@ li{
 	margin-top: -0.3rem;
 }
 
+.radio-btn {
+	display: block;
+  	padding-left: 1.5rem;
+  	margin-top: 0.5rem;
+}
+
 /* Checkout Button Styling*/
 /*.confirm-checkout{
 	margin-top: 1.5rem;
@@ -138,11 +144,6 @@ li{
 	color: #3C3C3C;
 }*/
 
-/* Submit Button Styling*/
-.contact-sales{
-	margin-left: -1rem;
-	margin-top: 1.5rem;
-}
 
 /*.grid {
     display: grid;
@@ -218,12 +219,12 @@ figcaption{
 		margin-left: 1rem;
 	}
 
-	.form-section{
-		display: block;
+	p{
+		max-width: 100%;
 	}
 
 	.nav-logo img{
-		width: 10rem;
+		width: 5rem;
 		margin-left: -2rem;
 	}
 
@@ -239,9 +240,21 @@ figcaption{
 		margin-right: 0;
 	}
 
+	.solo.form-section{
+		width: 50%;
+	}
+	
+	.form-section{
+		display: block;
+		width: 90%;
+	}
+
 	.radio-btn {
-	  	display: block;
 	  	margin-top: 0.3rem;
+	}
+
+	.image-gallery{
+    	text-align: center;
 	}
 }
 
@@ -273,15 +286,17 @@ figcaption{
 		margin-right: 0;
 	}
 
+	.solo.form-section{
+		width: 50%;
+	}
+
 	.form-section{
 		display: block;
 		width: 100%;
 	}
 
-	.radio-btn {
-    	display: block;
-	  	padding-left: 1.5rem;
-	  	margin-top: 0.5rem;
+	.image-gallery{
+    	text-align: center;
 	}
 }
 
@@ -308,10 +323,8 @@ figcaption{
 		margin-right: 12%;
 	}
 
-	.radio-btn {
-    	display: block;
-	  	padding-left: 1.5rem;
-	  	margin-top: 0.5rem;
+	.image-gallery{
+    	text-align: center;
 	}
 
 }
