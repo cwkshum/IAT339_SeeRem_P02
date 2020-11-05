@@ -19,6 +19,7 @@ function toTop() {
 function scrollFunction(string) {
   if (string === 'confirm') {
     $('.confirmation-container').css("display", "block");
+    $('.hidden.container').css("display", "flex");
     var offset = $('.confirmation-container').offset();
     $('html, body').animate({scrollTop: offset.top});
   } else if (string === 'form') {
