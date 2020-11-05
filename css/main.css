@@ -214,7 +214,7 @@ header h1{
 
 /* Change Size of Text Input Field */
 input[type = "text"], input[type="email"]{
-  width: 20rem;
+  width: 100%;
 }
 
 /* General Button Styling */
