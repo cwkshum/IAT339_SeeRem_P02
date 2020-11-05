@@ -63,8 +63,12 @@
   margin-bottom: 2rem;
 }
 
-.seeda-features-container p, .seeda-benefits-container p{
+.seeda-features-container p{
   max-width: 100%;
+}
+
+.seeda-benefits-container p{
+  max-width: 90%;
 }
 
 .seeda-benefits-container {
@@ -151,7 +155,7 @@
     flex-direction: column;
   }
 
-  .page-description p{
+  .page-description p, .seeda-benefits-container p{
     max-width: 100%;
   }
 
@@ -219,7 +223,7 @@
     flex-direction: column;
   }
 
-  .page-description p{
+  .page-description p, .seeda-benefits-container p{
     max-width: 100%;
   }
 
@@ -281,7 +285,7 @@
     flex-direction: column;
   }
 
-  .page-description p{
+  .page-description p, .seeda-benefits-container p{
     max-width: 100%;
   }
 
