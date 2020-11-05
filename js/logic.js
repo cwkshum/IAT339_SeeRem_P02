@@ -33,13 +33,13 @@ var nav = 0; // off as default
 
 function changeNav() {
   // if nav is off and the Menu button is clicked, show the navigation links if the screen size is under 960px
-  if (nav === 0){
-    if ($(window).width() <= 960){
+  if (nav === 0) {
+    if ($(window).width() <= 960) {
       $('.nav-link-section').css("display", "block");
       $('.nav-link-section a').css("display", "block");
       nav = 1;
     }
-  } else if (nav === 1){
+  } else if (nav === 1) {
     $('.nav-link-section a').css("display", "none");
     nav = 0;
   }
@@ -101,8 +101,7 @@ function validateForm(string) {
     }
   }
   if (string === "subscription") {
-    var radio = document.forms.Form.radio.value;
-    if(firstName === "" || lastName ==="" || email ==="" || phone ==="") {
+    if(firstName === "" || lastName ==="" || email ==="") {
       return false;
     } else {
       scrollFunction('confirm');
