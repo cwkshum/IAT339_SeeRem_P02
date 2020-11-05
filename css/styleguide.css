@@ -100,13 +100,8 @@ code{
 }
 
 /*list styling*/
-ol{
-	color: #3C3C3C;
-}
-
 li{
-	padding-left: 0.5rem;
-	margin-bottom: 1rem;
+	margin-top: 0.8rem;
 }
 
 /* Service Listing Container*/
@@ -280,7 +275,7 @@ figcaption{
 /* MEDIA QUERIES */
 /* Screen size of 480px or less */
 @media screen and (max-width:30rem){
-
+body{background: pink;}
 	#container{
 		flex-direction: column;
 	}
@@ -306,7 +301,7 @@ figcaption{
 
 /* Screen size of  */
 @media screen and (min-width:30rem) and (max-width: 48rem){
-
+	body{background: red;}
 	#container{
 		flex-direction: column;
 	}
@@ -333,7 +328,7 @@ figcaption{
 
 /* Screen size of  */
 @media screen and (min-width:48rem) and (max-width: 60rem){
-
+	body{background: blue;}
 	#container{
 		flex-direction: column;
 	}

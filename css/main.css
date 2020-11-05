@@ -639,6 +639,7 @@ footer li{
 
 	.nav-link {
 		display: block;
+		margin-bottom: 0.8rem;
 	}
 
 	.nav-link-section a {
