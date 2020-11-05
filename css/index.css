@@ -187,6 +187,7 @@
   .benefits.image-container{
     margin-top: -1rem;
     max-width: 90%;
+    padding-left: 2rem;
   }
 
   #services.container{
