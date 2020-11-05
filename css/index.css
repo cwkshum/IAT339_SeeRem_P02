@@ -59,11 +59,11 @@
   flex: 1;
   order: 2;
   padding-right: 1rem;
-  padding-left: 5rem;
+  padding-left: 3rem;
   margin-bottom: 2rem;
 }
 
-.seeda-features-container p{
+.seeda-features-container p, .seeda-benefits-container p{
   max-width: 100%;
 }
 
@@ -80,7 +80,7 @@
 .benefits.image-container {
   flex: 1;
   order: 1;
-  padding-left: 2rem;
+  padding-left: 4rem;
 }
 
 .features.image-container img, .benefits.image-container img {
@@ -151,7 +151,7 @@
     flex-direction: column;
   }
 
-  .page-description p, .seeda-benefits-container p {
+  .page-description p{
     max-width: 100%;
   }
 
@@ -174,8 +174,9 @@
 
   .features.image-container{
     order: 2;
-    margin: 0 auto;
+    margin-top: -0.5rem;
     max-width: 90%;
+    padding-left: 2rem;
   }
 
   .seeda-benefits-container {
@@ -184,7 +185,7 @@
   }
 
   .benefits.image-container{
-    margin: 0 auto;
+    margin-top: -1rem;
     max-width: 90%;
   }
 
@@ -195,7 +196,6 @@
 
 /* Screen size of 480px - 800px */
 @media screen and (min-width:30rem) and (max-width: 50rem){
-
   .main-header{
     padding: 5rem 3.8rem;
   }
@@ -218,7 +218,7 @@
     flex-direction: column;
   }
 
-  .page-description p, .seeda-benefits-container p {
+  .page-description p{
     max-width: 100%;
   }
 
@@ -243,9 +243,10 @@
   }
 
   .features.image-container{
+    margin-top: 0;
     order: 2;
-    margin: 0 auto;
     max-width: 90%;
+    padding-left: 4rem;
   }
 
   .seeda-benefits-container {
@@ -253,8 +254,9 @@
   }
 
   .benefits.image-container{
-    margin: 0 auto;
+    margin-top: -1.5rem;
     max-width: 90%;
+    padding-left: 4rem;
   }
 }
 
@@ -278,7 +280,7 @@
     flex-direction: column;
   }
 
-  .page-description p, .seeda-benefits-container p {
+  .page-description p{
     max-width: 100%;
   }
 
@@ -312,8 +314,8 @@
 
   .features.image-container{
     order: 2;
-    margin: 0 auto;
     max-width: 80%;
+    padding-left: 6rem;
   }
 
   .seeda-benefits-container {
@@ -321,7 +323,8 @@
   }
 
   .benefits.image-container{
-    margin: 0 auto;
+    margin-top: -2rem;
     max-width: 80%;
+    padding-left: 6rem;
   }
 }
