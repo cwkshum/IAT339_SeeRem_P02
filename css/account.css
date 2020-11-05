@@ -46,7 +46,7 @@
 		max-width: 100%;
 	}
 
-	.account-form-container {
+	.form-container {
 		margin-top: 3rem;
 		margin-left: 0;
 	}
@@ -97,7 +97,7 @@
 		max-width: 70%;
 	}
 
-	.account-form-container {
+	.form-container {
 		margin-top: 3rem;
 	}
 
@@ -190,7 +190,7 @@
 /* Screen size of 1248px - 1440px */
 @media screen and (min-width: 78rem) and (max-width: 90rem){
 
-	.account-form-container{
+	.form-container{
 		padding-left: 5%;
 	}
 
@@ -208,7 +208,7 @@
 /* Screen size of 1440px - 1728px */
 @media screen and (min-width: 90rem) and (max-width: 108rem){
 
-	.account-form-container{
+	.form-container{
 		padding-left: 5%;
 	}
 
@@ -226,7 +226,7 @@
 /* Screen size above 1728px */
 @media screen and (min-width: 108rem){
 
-	.account-form-container{
+	.form-container{
 		padding-left: 5%;
 	}
 

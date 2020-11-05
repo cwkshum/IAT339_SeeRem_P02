@@ -1,3 +1,4 @@
+/* Page description Styling */
 .page-description{
 	/* extended from main.css */
 	margin-bottom: 1rem;
@@ -14,16 +15,18 @@
 	margin-right: 0.8rem;
 }
 
+/* Subheading Styling */
 .page-description h3{
 	margin-top: 2rem;
 }
 
 /* Contact Form Container*/
-.contact-form-container{
+.form-container{
 	/* extended from main.css */
 	order: 2;
 }
 
+/* Text Area Styling */
 textarea{
 	width: 100%;
 	padding: 0.5rem;
@@ -40,8 +43,6 @@ textarea:focus{
 	border: 1px solid #AE3034;
 	background: #F5F5F5;
 }
-
-
 
 
 /* MEDIA QUERIES */
@@ -77,7 +78,7 @@ textarea:focus{
 		margin-top: 1rem;
 	}
 
-	.contact-form-container{
+	.form-container{
 		/* extended from main.css */
 		margin-top: 2rem;
 	}
@@ -100,7 +101,7 @@ textarea:focus{
 		margin-right: 1.5rem;
 	}
 
-	.contact-form-container{
+	.form-container{
 		/* extended from main.css */
 		margin-top: 2rem;
 		margin-left: 1rem;
@@ -118,7 +119,7 @@ textarea:focus{
 		max-width: 100%;
 	}
 
-	.contact-form-container{
+	.form-container{
 		margin-top: 2rem;
 		margin-left: 1rem;
 	}
@@ -139,7 +140,7 @@ textarea:focus{
 /* Screen size above 1184px*/
 @media screen and (min-width: 74rem){
 
-	.contact-form-container{
+	.form-container{
 		margin-bottom: 7rem;
 	}
 

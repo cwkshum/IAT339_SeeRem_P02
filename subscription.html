@@ -19,20 +19,23 @@
     	<link href="css/main.css" rel="stylesheet">
     	<link href="css/subscription.css" rel="stylesheet">
 
-			<!-- JavaScript -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		  <script src="js/logic.js"></script>
+		<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/logic.js"></script>
   	</head>
 
   	<body>
 			<!-- Navigation -->
 			<nav class="main-nav">
+				<!-- Navigation Logo -->
 				<div class="nav-logo">
 					<a href="index.html"><img src="img/seeremlogo2.png" alt="SeeRem Logo"></a>
 				</div>
+				<!-- Mobile Navigation -->
 				<div class="mobile-nav">
 					<p class="btn" onclick="changeNav()">MENU</p>
 				</div>
+				<!-- Navigation Links -->
 				<div class="nav-link-section">
 					<a href="index.html" class="nav-link">Home</a>
 					<a href="index.html#services" class="nav-link">Services</a>
@@ -45,24 +48,26 @@
 	    	<h1>Subscription Plans</h1>
 	    </header>
 
-			<div class="hidden container">
-				<div class="confirmation-container">
-					<h2>Subscription Confirmation</h2>
-					<p>Thank you for contacting our sales team! We will review your subscription request and get back to you shortly with further details on how to complete your subscription purchase. If you do not receive a response within two business days, please contact us <a href="contact.html">here</a>.</p>
-				</div>
+	    <!-- Form Confirmation Message -->
+		<div class="hidden container">
+			<div class="confirmation-container">
+				<h2>Subscription Confirmation</h2>
+				<p>Thank you for contacting our sales team! We will review your subscription request and get back to you shortly with further details on how to complete your subscription purchase. If you do not receive a response within two business days, please contact us <a href="contact.html">here</a>.</p>
 			</div>
+		</div>
 
 	    <div class="container">
+	    	<!-- Subscription Plan Information -->
 	    	<div class="page-description">
-	    		<!-- Subscription Plan Information -->
 		    	<h2>SeeRem Subscription Plans</h2>
 		    	<p>We offer multiple subscription plans to suit the needs of all businesses. No matter the size of your team, the scale of the project, or the time length, SeeRem can help you connect when you need it most. Test out remote communication today with our 30 day trial version free of charge. Contact our sales team below for further details on downloading your trial version or purchasing a full subscription.</p>
 	    	</div>
+	    	<!-- Image -->
 	    	<div class="image-container">
-	    		<!-- Image -->
 		       	<img src="img/construction.jpg" alt="Purchase Subscription">
 	    	</div>
 		</div>
+
 		<!-- Subscription Plan Options -->
 		<div class="subscription-container">
 			<!-- First Subscription Plan: Free -->
@@ -112,9 +117,8 @@
 
 		<!-- Contact Sales Form -->
 		<div id="#contact-sales" class="container">
-			<div class="contact-sales-container">
+			<div class="form-container">
 		       	<h2>Contact Sales</h2>
-		    	<!-- Create Account Form -->
 		        <form class="contact-form" name="Form" onsubmit="return false">
 			        <!-- First Name Input Box -->
 			        <div class="form-section">
@@ -140,8 +144,8 @@
 			  		<div class="form-section">
 	  					<p class="form-label">Subscription Plan</p>
 			  			<label class="radio-btn form-label">Trial
-	 						<input type="radio" name="radio" checked>
-	  						<span class="radio-select" id="trialRad"></span>
+	 						<input type="radio" id="trialRad" name="radio" checked>
+	  						<span class="radio-select"></span>
 						</label>
 						<label class="radio-btn form-label">Monthly
 		 					<input type="radio" id="monthlyRad" name="radio">
@@ -160,6 +164,7 @@
 			</div>
 		</div>
 
+		<!-- Scroll to top Button -->
 		<div id="scrollUpbtn" onclick="toTop()">TOP</div>
 
 		<!-- Footer -->

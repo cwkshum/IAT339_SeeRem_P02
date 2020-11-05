@@ -56,9 +56,6 @@ hr{
 	margin-bottom: 1rem;
 }
 
-
-
-
 /* MEDIA QUERIES */
 /* Screen size below 480px */
 @media screen and (max-width:30rem){
@@ -265,7 +262,7 @@ hr{
 		margin-right: 10%;
 	}
 
-	.contact-sales-container{
+	.form-container{
 		padding-left: 5%;
 	}
 
@@ -283,7 +280,7 @@ hr{
 		margin-right: 10%;
 	}
 
-	.contact-sales-container{
+	.form-container{
 		padding-left: 5%;
 	}
 
@@ -302,7 +299,7 @@ hr{
 		margin-right: 10%;
 	}
 
-	.contact-sales-container{
+	.form-container{
 		padding-left: 5%;
 	}
 

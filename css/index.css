@@ -19,6 +19,80 @@
   text-shadow: 0.3rem 0.3rem 2rem #000000;
 }
 
+/* Update Banner Text */
+.updates h2 {
+  display: block;
+  background: #ddd;
+  text-align: center;
+  margin-top: 0;
+  padding: 2rem;
+}
+
+.page-description p {
+  max-width: 90%;
+}
+
+/* About SeeRem Image Styling */
+#about-seerem .image-container{
+  flex: 1;
+  order: 2;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+#about-seerem .image-container img{
+  width: 100%;
+}
+
+/* Features and Benefits Section Styling */
+.seerem.container{
+  align-items: center;
+}
+
+.features.image-container {
+  flex: 1;
+  order: 1;
+  margin-left: 1rem;
+}
+
+.seeda-features-container {
+  flex: 1;
+  order: 2;
+  padding-right: 1rem;
+  padding-left: 5rem;
+  margin-bottom: 2rem;
+}
+
+.seeda-features-container p{
+  max-width: 100%;
+}
+
+.seeda-benefits-container {
+  flex: 1;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.seeda-benefits-container li{
+  margin-top: 0.8rem;
+}
+
+.benefits.image-container {
+  flex: 1;
+  order: 1;
+  padding-left: 2rem;
+}
+
+.features.image-container img, .benefits.image-container img {
+  width: 90%;
+}
+
+/* Services Section Styling */
+#services{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 /* Container for Service Listings */
 .service-listing-container{
   display: flex;
@@ -46,79 +120,6 @@
 .service-listing img{
   width: 100%;
 }
-
-/* Update Banner Text */
-.updates h2 {
-  display: block;
-  background: #ddd;
-  text-align: center;
-  margin-top: 0;
-  padding: 2rem;
-}
-
-.page-description p {
-  max-width: 90%;
-}
-
-/* Image Styling */
-#about-seerem .image-container{
-  flex: 1;
-  order: 2;
-  margin-top: 1.5rem;
-  margin-right: 1rem;
-}
-
-#about-seerem .image-container img{
-  width: 100%;
-}
-
-#services{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.seerem.container{
-  align-items: center;
-}
-
-.features.image-container {
-  flex: 1;
-  order: 1;
-  margin-left: 1rem;
-}
-
-.features.image-container img, .benefits.image-container img {
-  width: 90%;
-}
-
-.seeda-features-container {
-  flex: 1;
-  order: 2;
-  padding-right: 1rem;
-  padding-left: 5rem;
-  margin-bottom: 2rem;
-}
-
-.seeda-benefits-container {
-  flex: 1;
-  padding-left: 1rem;
-  margin-bottom: 2rem;
-}
-
-.benefits.image-container {
-  flex: 1;
-  order: 1;
-  padding-left: 2rem;
-}
-
-.seeda-benefits-container li{
-  margin-top: 0.8rem;
-}
-
-.seeda-features-container p{
-  max-width: 100%;
-}
-
 
 /* MEDIA QUERIES */
 /* Screen size below 480px */
@@ -182,7 +183,7 @@
   }
 }
 
-/* Screen size of 480px -  800px */
+/* Screen size of 480px - 800px */
 @media screen and (min-width:30rem) and (max-width: 50rem){
 
   .main-header{
@@ -247,7 +248,7 @@
   }
 }
 
-/* Screen size of 800px -  1088px */
+/* Screen size of 800px - 1088px */
 @media screen and (min-width: 50rem) and (max-width: 60rem){
 
   .main-header{
