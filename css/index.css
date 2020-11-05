@@ -1,3 +1,24 @@
+/* Header Styling */
+.main-header{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../img/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 9rem 3.8rem;
+}
+
+.main-header h1{
+  font-size: 4rem;
+  text-shadow: 0.3rem 0.3rem 2rem #000000;
+}
+
+.main-header h2{
+  color: #ffffff;
+  margin-top: -3rem;
+  text-shadow: 0.3rem 0.3rem 2rem #000000;
+}
+
 /* Container for Service Listings */
 .service-listing-container{
   display: flex;
@@ -97,8 +118,6 @@
 .seeda-features-container p{
   max-width: 100%;
 }
-
-
 
 
 /* MEDIA QUERIES */
