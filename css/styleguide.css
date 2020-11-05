@@ -51,43 +51,6 @@ code{
 	word-wrap: break-word;
 }
 
-/* Navigation Styling */
-/*.main-nav{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	background: #ffffff;
-	padding: 0.4rem 5rem;
-}*/
-
-/* Logo in Navigation */
-/*.nav-logo img{
-	width: 10rem;
-}*/
-
-/*.nav-logo{
-	flex: 1;
-	margin-left: -2.5rem;
-}*/
-
-/* Navigation Links */
-/*.nav-link-section{
-	flex: 3;
-	text-align: right;
-	padding-top: 1.1rem;
-}
-
-.nav-link{
-	color: #AE3034;
-	padding-bottom: 0.2rem;
-	margin-right: 1.2rem;
-}
-
-.nav-link:hover, .nav-link:focus{
-	color: #3C3C3C;
-	border-bottom: 1px solid #3C3C3C;
-}*/
-
 /* Submit and More button Styling*/
 .submit-btn, .more-btn{
 	padding: 0.7rem 1rem;
@@ -136,23 +99,6 @@ code{
 	color: #954749;
 }
 
-/* Change Size of Text Input Field */
-input[type = "text"], input[type="email"]{
-    width: 100%;
-}
-
-/*image links*/
-.img-link{
-	width: 50%;
-	border: 6px solid #F5F5F5;
-	transition: 0.3s;
-}
-
-.img-link:hover, .img-link:focus{
-	width: 50%;
-	border: 6px solid #954749;
-}
-
 /*list styling*/
 ol{
 	color: #3C3C3C;
@@ -183,14 +129,6 @@ li{
 .service-listing img{
 	width: 100%;
 }
-
-/* Payment form styling */
-/*.payment-form{
-	background: #ffffff;
-	padding: 2rem 4rem;
-	margin-right: 10rem;
-	margin-bottom: 2rem;
-}*/
 
 /* Contact Sales Container Styling */
 .contact-sales-container{
@@ -331,6 +269,10 @@ figure{
 	margin-left: 0;
 }
 
+figcaption{
+	margin-top: 0.8rem;
+}
+
 .image-gallery img{
 	width: 60%;
 }
@@ -338,7 +280,7 @@ figure{
 /* MEDIA QUERIES */
 /* Screen size of 480px or less */
 @media screen and (max-width:30rem){
-body{background: pink;}
+
 	#container{
 		flex-direction: column;
 	}
@@ -364,7 +306,7 @@ body{background: pink;}
 
 /* Screen size of  */
 @media screen and (min-width:30rem) and (max-width: 48rem){
-	body{background: red;}
+
 	#container{
 		flex-direction: column;
 	}
@@ -391,7 +333,7 @@ body{background: pink;}
 
 /* Screen size of  */
 @media screen and (min-width:48rem) and (max-width: 60rem){
-	body{background: blue;}
+
 	#container{
 		flex-direction: column;
 	}

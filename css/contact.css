@@ -90,7 +90,6 @@ textarea:focus{
 
 /* Screen size of 480px -  896px */
 @media screen and (min-width: 30rem) and (max-width: 56rem){
-body{background: green;}
 
 	.container{
 		flex-direction: column;
